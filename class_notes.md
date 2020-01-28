@@ -10,7 +10,7 @@
     * or maybe just think about the camera
     * mobile device during protests
 
-To do this week:
+* To do this week:
     * Post portfolio
     * **watch former thesis**
     * Think about thesis
