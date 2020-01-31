@@ -1,5 +1,6 @@
 # Thesis Documentation
 *Guillermo Montecinos*
+
 *ITP Spring 2020*
 
 ## Portfolio - Week 0
