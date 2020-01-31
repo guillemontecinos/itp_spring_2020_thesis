@@ -1,4 +1,6 @@
-# Thesis
+# Thesis Documentation
+*Guillermo Montecinos*
+*ITP Spring 2020*
 
 ## Portfolio - Week 0
 From the work I've done in ITP, three projects are important to me regarding the concepts and techniques I merged.
