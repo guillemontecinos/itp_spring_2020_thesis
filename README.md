@@ -1,6 +1,6 @@
 # Thesis
 
-## Portfolio
+## Portfolio - Week 0
 From the work I've done in ITP, three projects are important to me regarding the concepts and techniques I merged.
 
 ### Generative Major Arcana
@@ -17,7 +17,7 @@ Further information on this project can be found on its complete [documentation]
 ### sonAR
 This project may be the starting point of my thesis. It is an AR spatial sound app in which physical elements can be spawned in space and react to the ambient sound as well as act as sound sources. This project attempted to explore how users can interact with sound elements that exist in an intermediate layer between the real world and our perception.
 
-Further information on this project can be found on its [documentation](https://guillemontecinos.cl/portfolio/sonar/).
+Further information of this project can be found on its [documentation](https://guillemontecinos.cl/portfolio/sonar/).
 
 ### Dead Man Walking
 This project was my first AR production using Unity. In this project I learned the foundations of AR in Unity and its limitations, and I also learned how to develop a storytelling-based experience using XR technologies. Please check out my [portfolio page](https://guillemontecinos.cl/portfolio/dead-man-walking/) for further information.
