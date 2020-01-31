@@ -20,4 +20,8 @@ This project may be the starting point of my thesis. It is an AR spatial sound a
 Further information on this project can be found on its [documentation](https://guillemontecinos.cl/portfolio/sonar/).
 
 ### Dead Man Walking
-This project was my first AR production using Unity. In this project I learned the foundations of AR in Unity and its limitations, and I also learned how to develop a storytelling-based experience using XR technologies.
+This project was my first AR production using Unity. In this project I learned the foundations of AR in Unity and its limitations, and I also learned how to develop a storytelling-based experience using XR technologies. Please check out my [portfolio page](https://guillemontecinos.cl/portfolio/dead-man-walking/) for further information.
+
+<p align="center">
+  <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/assets/dead-man-walking.jpg" align="middle" width="80%">
+</p>
