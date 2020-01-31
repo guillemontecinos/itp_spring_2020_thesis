@@ -12,6 +12,8 @@
 
 * To do this week:
     * Post portfolio
+    * Do Homework
+    * Read Gabe's [email](https://mail.google.com/mail/u/1/#inbox/FMfcgxwGDDgZGLtbLBjLGDLDkGwxrGbb)
     * **watch former thesis**
     * Think about thesis
-    * Do Homework
+    
