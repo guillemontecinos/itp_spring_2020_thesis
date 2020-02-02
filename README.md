@@ -40,7 +40,7 @@ During the first week we were commited to think about our thesis topic and devel
 The topic is too broad, and I have no understanding yet to destillate it into only one question. So instead of trying to find the question that would guide my research I decided to exercise writting a bunch of questions, starting from a general query to a more specific one, in order to walk through my ideas towards a few questions that could represent my topics of interets.
 
 Talking about *holograms* in his book *Simulacra and Simulation*, Jean Baudrillard says:
-> The TV studio transforms you into holographic characters: one has the impression of being materialized in space by the light of projectors, like translucid characters who pass through the masses (that of millions of TV viewers) exactly as your real hand passes through the unreal hologram without encountering any resistance–but not without concequences: having passed through the hologram has rendered your hand unreal as well (p. 105).
+> The TV studio transforms you into holographic characters: one has the impression of being materialized in space by the light of projectors, like translucid characters who pass through the masses (that of millions of TV viewers) exactly as your real hand passes through the unreal hologram without encountering any resistance–but not without concequences: having passed through the hologram has rendered your hand unreal as well *(p. 105)*.
 
 #### First set of questions
 |   |   |   |
