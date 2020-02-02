@@ -37,7 +37,7 @@ During the first week we were commited to think about our thesis topic and devel
   <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/assets/reality-mind-map.jpg" align="middle" width="80%">
 </p>
 
-The topic is too broad, and I have no understanding yet to destillate it into only one question. Instead, I decided to exercise writting a bunch of question that could start from a general query to a more specific one, in order to walk through my ideas towards a few questions that could represent my topic of interes.
+The topic is too broad, and I have no understanding yet to destillate it into only one question. So instead of trying to find the question that would guide my research I decided to exercise writting a bunch of questions, starting from a general query to a more specific one, in order to walk through my ideas towards a few questions that could represent my topics of interets.
 
 #### First round of questions
 |   |   |   |
