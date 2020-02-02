@@ -49,15 +49,15 @@ Talking about *holograms* in his book *Simulacra and Simulation*, Jean Baudrilla
 | Scrolling down the Instagram feed                                     | In the space outside our bodies?                                              | Are dreams part of reality even though theay are not real? |
 | Santiag/Plaza de la Dignidad faded out                                | In the boundary between our body and the space?                               | Does it make senes to talk about what is real or what is not? |
 | It is not there because i am not there                                | Or inside our minds?                                                          | Is Santiago still located at -33.437º, -70,634º even I don't see it throught my eyes? |
-| Doesn't exist because I don't experience it                           | Can reality be more than only one?                                            | Can be my sister and parents laying to me and faking Santiago is still there? |
+| Doesn't exist because I don't experience it                           | Can reality be more than only one?                                            | Can be my sister and parents lying to me and faking Santiago is still there? |
 | I live a simulation of that reality that I imagine and scroll down    | Can many realities coexist in the same time/space?                            | Is it possible that Google Maps creates a new instance of the class 'Santiago' every time I click on it in the browser? |
 |                                                                       | Is the moon's landscape my reality while I live in NYC?                       | |
 |                                                                       | Can it be my reality if I have no emotional connections nor memories of it?   | |
 
 #### Second set of questions
 |   |   |
-|---|---|
-| Is our political organization real? or are we ina  simulacrum of politcal order? | Is capitalism real becaus it governs the space we move in or because it governs the realationships between our ideas inside our minds? |
+|:---:|:---:|
+| Is a countries political organization real? or are we in a simulacrum of politcal order? | Is capitalism real becaus it governs the space we move in or because it governs the realationships between our ideas inside our minds? |
 | Do we perform everyday that we are citizens and belong to a super-structure that governs us? | Does capitalism exist in the layer when our body ends and the outer space begins? |
 | Can be a new constitution real? | Can capitalism exist in an infinitesimal layer between two bodies? |
 | Is the current constitution real? | Is capitalism cannot survive between two bodies, why can it exist in a society? |
@@ -67,3 +67,4 @@ Talking about *holograms* in his book *Simulacra and Simulation*, Jean Baudrilla
 | Is that society even real? | |
 | Is capitalism real? | |
 | Is capitalism realism real? | |
+
