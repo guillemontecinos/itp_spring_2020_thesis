@@ -39,7 +39,8 @@ During the first week we were commited to think about our thesis topic and devel
 
 The topic is too broad, and I have no understanding yet to destillate it into only one question. Instead, I decided to exercise writting a bunch of question that could start from a general query to a more specific one, in order to walk through my ideas towards a few questions that could represent my topic of interes.
 
-|   |   
+#### First round of questions
+|   |   |   |
 |---|---|---|
 | Day dreaming                                                          | Where reality becaomes reality?                                               | Can something be my reality –or can I be part of its reality– only because I imagined it? |
 | Scrolling down the Instagram feed                                     | In the space outside our bodies?                                              | Are dreams part of reality even though theay are not real? |
@@ -49,3 +50,17 @@ The topic is too broad, and I have no understanding yet to destillate it into on
 | I live a simulation of that reality that I imagine and scroll down    | Can many realities coexist in the same time/space?                            | Is it possible that Google Maps creates a new instance of the class 'Santiago' every time I click on it in the browser? |
 |                                                                       | Is the moon's landscape my reality while I live in NYC?                       | |
 |                                                                       | Can it be my reality if I have no emotional connections nor memories of it?   | |
+
+#### Second round of questions
+|   |   |
+|---|---|
+| Is our political organization real? or are we ina  simulacrum of politcal order? | Is capitalism real becaus it governs the space we move in or because it governs the realationships between our ideas inside our minds? |
+| Do we perform everyday that we are citizens and belong to a super-structure that governs us? | Does capitalism exist in the layer when our body ends and the outer space begins? |
+| Can be a new constitution real? | Can capitalism exist in an infinitesimal layer between two bodies? |
+| Is the current constitution real? | Is capitalism cannot survive between two bodies, why can it exist in a society? |
+| Are the powers that co-opt us real? | Are we a society? |
+| Is the police real? | Are we connected and aggloremated by invisible forces like magnetism? |
+| Are police men and women simulating they detent a power given by the society? | Who can ensure me that all this is not a simulacrum without pointing out movies like the matrix and inception? |
+| Is that society even real? | |
+| Is capitalism real? | |
+| Is capitalism realism real? | |
