@@ -39,6 +39,7 @@ During the first week we were commited to think about our thesis topic and devel
 
 The topic is too broad, and I have no understanding yet to destillate it into only one question. Instead, I decided to exercise writting a bunch of question that could start from a general query to a more specific one, in order to walk through my ideas towards a few questions that could represent my topic of interes.
 
+|   |   |   |
 |---|---|---|
 | Day dreaming                                                          | Where reality becaomes reality?                                               | Can something be my reality –or can I be part of its reality– only because I imagined it? |
 | Scrolling down the Instagram feed                                     | In the space outside our bodies?                                              | Are dreams part of reality even though theay are not real? |
