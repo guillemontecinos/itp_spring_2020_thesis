@@ -65,5 +65,6 @@ The topic is too broad, and I have no understanding yet to destillate it into on
 | Is capitalism real? | |
 | Is capitalism realism real? | |
 
+
 Talking about *holograms* in his book *Simulacra and Simulation*, Jean Baudrillard says:
 > The TV studio transforms you into holographic characters: one has the impression of being materialized in space by the light of projectors, like translucid characters who pass through the masses (that of millions of TV viewers) exactly as your real hand passes through the unreal hologram without encountering any resistance–but not without concequences: having passed through the hologram has rendered your hand unreal as well (p. 105).
