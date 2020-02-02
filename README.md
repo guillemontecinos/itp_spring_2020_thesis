@@ -28,3 +28,11 @@ This project was my first AR production using Unity. In this project I learned t
 <p align="center">
   <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/assets/dead-man-walking.jpg" align="middle" width="80%">
 </p>
+
+## Ideation - Week 1
+### Mind-map and question
+During the first week we were commited to think about our thesis topic and develop some exercises based on it. The first exercise we were asked to do was to write a mind map that connected all conecpts related to our topic, and that would allow us to write a reearch question. The concept I picked to develop the map was *Reality*, since I have had lots of troubles with it since I've been experiencing the political process of Chile through the different media options offered by my mobile phone and laptop. In this sence, the idea of reality collapses because my current reality, NYC, is oppossed to Chile's reality, that I see *experience* mediated. Becasue of the above, I built the following mind-map:
+
+<p align="center">
+  <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/assets/reality-mind-map.jpg" align="middle" width="80%">
+</p>
