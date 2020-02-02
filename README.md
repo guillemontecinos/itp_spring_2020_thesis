@@ -56,7 +56,7 @@ Talking about *holograms* in his book *Simulacra and Simulation*, Jean Baudrilla
 
 #### Second set of questions
 |   |   |
-|:---:|:---:|
+|---|---|
 | Is a countries political organization real? or are we in a simulacrum of politcal order? | Is capitalism real becaus it governs the space we move in or because it governs the realationships between our ideas inside our minds? |
 | Do we perform everyday that we are citizens and belong to a super-structure that governs us? | Does capitalism exist in the layer when our body ends and the outer space begins? |
 | Can be a new constitution real? | Can capitalism exist in an infinitesimal layer between two bodies? |
