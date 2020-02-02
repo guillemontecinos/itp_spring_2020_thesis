@@ -31,16 +31,16 @@ This project was my first AR production using Unity. In this project I learned t
 
 ## Ideation - Week 1
 ### Mind-map and question
-During the first week we were commited to think about our thesis topic and develop some exercises based on it. The first exercise we were asked to do was to write a mind map that connected all conecpts related to our topic, and that would allow us to write a reearch question. The concept I picked to develop the map was *Reality*, since I have had lots of troubles with it since I've been experiencing the political process of Chile through the different media options offered by my mobile phone and laptop. In this sence, the idea of reality collapses because my current reality, NYC, is oppossed to Chile's reality, that I see *experience* mediated. Becasue of the above, I built the following mind-map:
+During the first week we were commited to think about our thesis topic and develop some exercises based on it. The first exercise we were asked to do was to write a mind map that connected all conecpts related to our topic, and that would allow us to write a research question. The concept I picked to develop the map was *Reality*, since I have had lots of troubles with experiencing the political process of Chile through the media, specially the media options offered by the mobile phone and laptop. In this sence, the idea of reality collapses because my current reality, NYC, is oppossed to Chile's reality, that I see *experience* mediated. Becasue of the above, I built the following mind-map:
 
 <p align="center">
   <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/assets/reality-mind-map.jpg" align="middle" width="80%">
 </p>
 
-The topic is too broad, and I have no understanding yet to destillate it into only one question. So instead of trying to find the question that would guide my research I decided to exercise writting a bunch of questions, starting from a general query to a more specific one, in order to walk through my ideas towards a few questions that could represent my topics of interets.
-
-Talking about *holograms* in his book *Simulacra and Simulation*, Jean Baudrillard says:
+When thinking about reality I observed there are a couple important relations that can be built from it, like what kind of reality are we talking about: physical, mental, political, visual, snesorial, or affective (emotional). When experiencing a process of political change through media, like the one I'm witnessing in Chile, it is easy to mistake what is real. Even though the receiver –in this case, me– knows the images come from an event that is taking place thousand of kilometers away, the sensations those images provoke can change mood and therefhore how they perceive reality. TV –like [Galería Cima](https://www.youtube.com/channel/UC4GOcOKkEefz5NamN4WyMFg/videos), which is a 24 hr youtube streaming from the main center of demonstrations in Chile– and independent media in social platforms like Instagram or Facebook becomes holograms that build pieces of immaterial reality or portals from our living room to Santiago. Talking about *holograms* in his book *Simulacra and Simulation*, Jean Baudrillard says:
 > The TV studio transforms you into holographic characters: one has the impression of being materialized in space by the light of projectors, like translucid characters who pass through the masses (that of millions of TV viewers) exactly as your real hand passes through the unreal hologram without encountering any resistance–but not without concequences: having passed through the hologram has rendered your hand unreal as well *(p. 105)*.
+
+The topic is too broad, and I have no understanding yet to destillate it into only one question. So instead of trying to find the question that would guide my research I decided to exercise writting a bunch of questions, starting from a general query to a more specific one, in order to walk through my ideas towards a few questions that could represent my topics of interets. The following questions are arranged in two tables but don't follow any specific pattern nor logic:
 
 #### First set of questions
 |   |   |   |
