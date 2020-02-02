@@ -36,3 +36,14 @@ During the first week we were commited to think about our thesis topic and devel
 <p align="center">
   <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/assets/reality-mind-map.jpg" align="middle" width="80%">
 </p>
+
+The topic is too broad, and I have no understanding yet to destillate it into only one question. Instead, I decided to exercise writting a bunch of question that could start from a general query to a more specific one, in order to walk through my ideas towards a few questions that could represent my topic of interes.
+
+| Day dreaming                                                          | Where reality becaomes reality?                                               | Can something be my reality –or can I be part of its reality– only because I imagined it?
+| Scrolling down the Instagram feed                                     | In the space outside our bodies?                                              | Are dreams part of reality even though theay are not real?
+| Santiag/Plaza de la Dignidad faded out                                | In the boundary between our body and the space?                               | Does it make senes to talk about what is real or what is not?
+| It is not there because i am not there                                | Or inside our minds?                                                          | Is Santiago still located at -33.437º, -70,634º even I don't see it throught my eyes?
+| Doesn't exist because I don't experience it                           | Can reality be more than only one?                                            | Can be my sister and parents laying to me and faking Santiago is still there?
+| I live a simulation of that reality that I imagine and scroll down    | Can many realities coexist in the same time/space?                            | Is it possible that Google Maps creates a new instance of the class 'Santiago' every time I click on it in the browser?
+|                                                                       | Is the moon's landscape my reality while I live in NYC?                       |
+|                                                                       | Can it be my reality if I have no emotional connections nor memories of it?   |
