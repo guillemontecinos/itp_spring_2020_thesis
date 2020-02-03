@@ -71,4 +71,7 @@ The topic is too broad, and I have no understanding yet to destillate it into on
 | Is capitalism realism real? | |
 
 ### Spectulative designs
-For this exerciese I'll take the question ***Where reality becomes real?*** a resarch question. It addresses the physicality of reality, that reality related to the space we inhabit and which is conceived in our mind as a logical representation of coordinates and vectors, whilst at the same time is experienced from the physicality of our body.
+For this exerciese I'll take the question ***Where reality becomes real?*** as a resarch question. It addresses the physical dimension of reality, that related to the space we inhabit and which is conceived in our minds as a logical representation of cartesian coordinates and vectors, whilst is experienced from the physicality of our body. The question presupposes we have no certainty the reality we assume as real is real, we the speculative designs should consider it.
+
+1. Handbook of good practices to test a reality is real. This set of procedures include all the aspects of everyday life a person should be aware in order to avoid buy a fake reality as a real reality.
+
