@@ -47,7 +47,7 @@ The topic is too broad, and I have no understanding yet to destillate it into on
 #### First set of questions
 |   |   |   |
 |---|---|---|
-| Day dreaming                                                          | Where reality becaomes reality?                                               | Can something be my reality –or can I be part of its reality– only because I imagined it? |
+| Day dreaming                                                          | Where reality becomes real?                                               | Can something be my reality –or can I be part of its reality– only because I imagined it? |
 | Scrolling down the Instagram feed                                     | In the space outside our bodies?                                              | Are dreams part of reality even though theay are not real? |
 | Santiag/Plaza de la Dignidad faded out                                | In the boundary between our body and the space?                               | Does it make senes to talk about what is real or what is not? |
 | It is not there because i am not there                                | Or inside our minds?                                                          | Is Santiago still located at -33.437º, -70,634º even I don't see it throught my eyes? |
@@ -59,10 +59,10 @@ The topic is too broad, and I have no understanding yet to destillate it into on
 #### Second set of questions
 |   |   |
 |---|---|
-| Is a countries political organization real? or are we in a simulacrum of politcal order? | Is capitalism real becaus it governs the space we move in or because it governs the realationships between our ideas inside our minds? |
+| Is a country's political organization real? or are we in a simulacrum of politcal order? | Is capitalism real becaus it governs the space we move in or because it governs the realationships between our ideas inside our minds? |
 | Do we perform everyday that we are citizens and belong to a super-structure that governs us? | Does capitalism exist in the layer when our body ends and the outer space begins? |
 | Can be a new constitution real? | Can capitalism exist in an infinitesimal layer between two bodies? |
-| Is the current constitution real? | Is capitalism cannot survive between two bodies, why can it exist in a society? |
+| Is the current constitution real? | If capitalism cannot survive between two bodies, why can it exist in a society? |
 | Are the powers that co-opt us real? | Are we a society? |
 | Is the police real? | Are we connected and aggloremated by invisible forces like magnetism? |
 | Are police men and women simulating they detent a power given by the society? | Who can ensure me that all this is not a simulacrum without pointing out movies like the matrix and inception? |
@@ -70,3 +70,5 @@ The topic is too broad, and I have no understanding yet to destillate it into on
 | Is capitalism real? | |
 | Is capitalism realism real? | |
 
+### Spectulative designs
+For this exerciese I'll take the question ***Where reality becomes real?*** a resarch question. It addresses the physicality of reality, that reality related to the space we inhabit and which is conceived in our mind as a logical representation of coordinates and vectors, whilst at the same time is experienced from the physicality of our body.
