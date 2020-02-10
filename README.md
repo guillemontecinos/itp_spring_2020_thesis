@@ -89,5 +89,5 @@ Books I want to read:
 * [The Doors of Perception](https://maps.org/images/pdf/books/HuxleyA1954TheDoorsOfPerception.pdf)
 
 <p align="center">
-  <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/assets/erasing-apps.gif" align="middle" width="20%">
+  <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/assets/erasing-apps.gif" align="middle" width="35%">
 </p>
