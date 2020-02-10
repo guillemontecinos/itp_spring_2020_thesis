@@ -73,5 +73,21 @@ The topic is too broad, and I have no understanding yet to destillate it into on
 ### Spectulative designs
 For this exerciese I'll take the question ***Where reality becomes real?*** as a resarch question. It addresses the physical dimension of reality, that related to the space we inhabit and which is conceived in our minds as a logical representation of cartesian coordinates and vectors, whilst is experienced from the physicality of our body. The question presupposes we have no certainty the reality we assume as real is real, we the speculative designs should consider it.
 
-1. Handbook of good practices to test a reality is real. This set of procedures include all the aspects of everyday life a person should be aware in order to avoid buy a fake reality as a real reality.
+1. Handbook of good practices to test a reality is real. This set of 
 
+This set of mindful procedures guide all the aspects of everyday life. By following these good practices should practices in order to be aware and avoid buy a fake reality as a real reality.
+
+## - Week 2
+* [The Deep Listener](https://experiments.withgoogle.com/augmentedarchitecture)
+* Umwelt
+  * [Definition](https://en.wikipedia.org/wiki/Umwelt)
+  * [David Eagleman](https://www.eagleman.com/blog/umwelt) [Ted Talk](https://www.ted.com/talks/david_eagleman_can_we_create_new_senses_for_humans#t-1183976)
+  * [Umwelt - John Deely](https://www.degruyter.com/downloadpdf/j/semi.2001.2001.issue-134/semi.2001.019/semi.2001.019.pdf)
+Books I want to read:
+* [Virtual Art: From Illusion to Immersion](https://www.amazon.com/Virtual-Art-Illusion-Immersion-Leonardo/dp/0262572230)
+* [Sensation and Perception](https://www.amazon.com/Sensation-Perception-Stanley-Coren-dp-0155001035/dp/0155001035/ref=mt_hardcover?_encoding=UTF8&me=&qid=)
+* [The Doors of Perception](https://maps.org/images/pdf/books/HuxleyA1954TheDoorsOfPerception.pdf)
+
+<p align="center">
+  <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/assets/erasing-apps.gif" align="middle" width="20%">
+</p>
