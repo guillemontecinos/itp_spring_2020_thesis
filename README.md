@@ -90,7 +90,15 @@ Based on the aforementioned reasons I designed an experiment that consisted on: 
   <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/assets/erasing-apps.gif" align="middle" width="30%">
 </p>
 
+The experiment period coincided with a very strong cold I got last week, that got me three days in bed; this is an important fact because affected considerably the conditions of the test. The first day off social media I'd say wasn't different enough from a *normal* day: even though I didn't have in my phone the apps that I used to open every five minutes, I didn't miss them yet because I was aware this was an experiment. So I spent most of my time reading and watching bulk YouTube videos.
 
+The fact of being sick and isolated in my bedroom took more importance during the second and thrid day of testing, when I got more bored and felt more isolated. I didn't have WhatsApp to tell my family about my cold, or talk with my friend about the football match we were probabli watching at the same time, nor had Instagram to infinitely scroll down content I didn't care about. Besides the above, it has to be clarified that even though I erased the aforementioned apps, while facing the necessity of communicating with my family and friends, and keeping track on Chile's situation, I found my way to evade the experiment's restrictions: traditional media for the second one and iMessage for the first one.
+
+media stream overflow
+
+time: illness, overtime, becaose social media takes a lot of time
+
+More than affecting my reality, it blocks my reality with a way a interacting with others that I don't like, specifically Instagram. (speak about ig)
 
 ### Annex
 * [The Deep Listener](https://experiments.withgoogle.com/augmentedarchitecture)
