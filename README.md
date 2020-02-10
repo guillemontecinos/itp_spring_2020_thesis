@@ -80,7 +80,7 @@ This set of mindful procedures guide all the aspects of everyday life. By follow
 ## Ideation - Week 2
 
 ### Weekly experiment: 4 days out of social media
-For this experiment I wanted to address some of the questions I have been aking myself during thesis process, some of them –that I wrote during class' 2 exercise– are: *can reality be composed by all realities at the same time?*, *can internet reproduce multiple realities at the same time?*, and *can different time scales occur simultaneously in one reality?*. These questions set the focus on 
+For this experiment I wanted to address some of the questions I have been aking myself during the last few weeks, some of them –that I wrote during class' 2 exercise– are: *can reality be composed by all realities at the same time?*, *can internet reproduce multiple realities at the same time?*, and *can different time realities –or time scales– occur simultaneously in one reality?*. As it can be seen, these questions set the focus on two aspects of reality: time –the nonspatial continuum in which events occur in apparently irreversible succession [(1)](https://www.wordnik.com/words/time) in which existence is measured, or the past, present, and future considered as a whole [(2)](https://dictionary.cambridge.org/us/dictionary/english/time)–
 
 The idea of questioning internet's role in the mediation of our reality –wether it is by the overflooding of content through social media and news broadcast services, or by simply because it particularly calls our attention– popped up after reading an [article](https://www.wired.com/story/mirrorworld-ar-next-big-tech-platform/) published by Wired that talked about the *mirrorworld*. 
 
