@@ -77,7 +77,21 @@ For this exerciese I'll take the question ***Where reality becomes real?*** as a
 
 This set of mindful procedures guide all the aspects of everyday life. By following these good practices should practices in order to be aware and avoid buy a fake reality as a real reality.
 
-## - Week 2
+## Ideation - Week 2
+
+### Weekly experiment: 4 days without social media
+For this experiment I wanted to address some of the questions I have been aking myself during thesis process, some of them –that I wrote during class' 2 exercise– are: *can reality be composed by all realities at the same time?*, *can internet reproduce multiple realities at the same time?*, and *can different time scales occur simultaneously in one reality?*. The idea of questioning internet's role in the mediation of our reality –wether it is by the overflooding of content through social media and news broadcast services, or by simply because it particularly calls our attention– popped up after reading an [article](https://www.wired.com/story/mirrorworld-ar-next-big-tech-platform/) published by Wired that talked about the *mirrorworld*. 
+
+The mirrorworld, according to this article, is a digital mapping of the real world where every element (body?) has its own 3D twin, from streets to animals to people. It is pretty much the (im)materialization of the idea of hyperreality proposed by Baudrillard –inspired in Borges' *On Exactitude in Science* fable–: a 3D simulacrum of the world on real scale with detailed enough quality to feed 3D engines in real time for AR and VR purposes. Since the internet can contain all realities that are feed to it, the mirrorworld can also be all realities at the same time, like a [hypercube](https://en.wikipedia.org/wiki/Hypercube) –geometrically speaking– of like Borges' Library of Babel. In this regard a story built on time is not linear anymore, because multiple stories happen on space and time simultaneusly, it can be a *hypercube of realities*.
+
+
+
+
+<p align="center">
+  <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/assets/erasing-apps.gif" align="middle" width="30%">
+</p>
+
+### Annex
 * [The Deep Listener](https://experiments.withgoogle.com/augmentedarchitecture)
 * Umwelt
   * [Definition](https://en.wikipedia.org/wiki/Umwelt)
@@ -87,7 +101,3 @@ Books I want to read:
 * [Virtual Art: From Illusion to Immersion](https://www.amazon.com/Virtual-Art-Illusion-Immersion-Leonardo/dp/0262572230)
 * [Sensation and Perception](https://www.amazon.com/Sensation-Perception-Stanley-Coren-dp-0155001035/dp/0155001035/ref=mt_hardcover?_encoding=UTF8&me=&qid=)
 * [The Doors of Perception](https://maps.org/images/pdf/books/HuxleyA1954TheDoorsOfPerception.pdf)
-
-<p align="center">
-  <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/assets/erasing-apps.gif" align="middle" width="35%">
-</p>
