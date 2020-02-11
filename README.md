@@ -123,3 +123,13 @@ Books I want to read:
 * [Virtual Art: From Illusion to Immersion](https://www.amazon.com/Virtual-Art-Illusion-Immersion-Leonardo/dp/0262572230)
 * [Sensation and Perception](https://www.amazon.com/Sensation-Perception-Stanley-Coren-dp-0155001035/dp/0155001035/ref=mt_hardcover?_encoding=UTF8&me=&qid=)
 * [The Doors of Perception](https://maps.org/images/pdf/books/HuxleyA1954TheDoorsOfPerception.pdf)
+
+Feedback from Aidan:
+> "I argue that this architecture of information broadcast is invasive because its goal is to persuade the user to keep consuming –i.e., to resign their will of quitting the app– and by this means smuggling adds of third parties." --> this seems like an important understanding!  I think the focus on time-scales is a great way to explore different, simultaneous realities.  On a very basic level, different academic disciplines think  on different time-scales (dance --> sociology --> history --> geology).  I wonder if there are individuals who actually experience these different time scales in a more visceral (non-intellectual) way.  Does activism generate a sense of immediacy?  What brings about a longer time-scale?  Spiritual work?   I don't know....  Excited to see how you experiment with this!
+
+Feedback from Gabe:
+> Remind me a little of this project by Sarah which would measure the amount of distance you scrolled each time you went online https://sarahrothberg.com/SCROLL-O-METER
+
+> What sort of active experiments could you come up with that would explore your question of whether different time realities could occur simultaneously in one reality?
+
+> It seems that there are many different scales of time already in our own reality? https://taeyoonchoi.com/2015/08/in-search-of-personalized-time/
