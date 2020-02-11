@@ -114,8 +114,7 @@ Inspired on the reflections I got from the experiment, I'd like to spend next we
 * Sarah Rothberg
 * Zach Lieberman
 
-
-* Umwelt
+Umwelt
   * [Definition](https://en.wikipedia.org/wiki/Umwelt)
   * [David Eagleman](https://www.eagleman.com/blog/umwelt) [Ted Talk](https://www.ted.com/talks/david_eagleman_can_we_create_new_senses_for_humans#t-1183976)
   * [Umwelt - John Deely](https://www.degruyter.com/downloadpdf/j/semi.2001.2001.issue-134/semi.2001.019/semi.2001.019.pdf)
