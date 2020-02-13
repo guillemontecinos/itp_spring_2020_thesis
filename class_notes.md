@@ -17,4 +17,9 @@
     * **watch former thesis**
     * Think about thesis
     
-## Class 2
+## Class 3
+Referents shown in class by Gabe
+* [Arielle Hein - A New Way To Measure Time](https://www.tedxmilehigh.com/speaker/arielle-hein/)
+* [CW&T - 3.16 Billion Cycles Clock](https://cwandt.com/products/3-16-billion-cycles)
+* [The Long Foundation - 10,000 Year Clock](http://longnow.org/)
+* Chris Burton's installation at LACMA
