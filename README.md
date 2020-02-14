@@ -103,7 +103,7 @@ On the other hand, I usually spend a lot of time consuming social media (most of
 Inspired on the reflections I got from the experiment, I'd like to spend next week researching about the idea of time and how perception of reality is affected by this concept. Now the question *can different time realities –or time scales– occur simultaneously in one reality?* takes relevance and can be used as a guide for next week's explorations.
 
 
-### Annex
+### Appendix
 
 #### Precedents
 * [The Deep Listener](https://experiments.withgoogle.com/augmentedarchitecture)
