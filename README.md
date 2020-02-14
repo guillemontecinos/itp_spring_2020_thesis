@@ -105,14 +105,25 @@ Inspired on the reflections I got from the experiment, I'd like to spend next we
 
 ### Appendix
 
+#### Title
+Deformed Realities – A critical approach to the effect of technologies in human perception of reality
+
 #### Precedents
 * [The Deep Listener](https://experiments.withgoogle.com/augmentedarchitecture)
 * [Relative realities. An enhancement of reality](http://archive.aec.at/prix/showmode/15272/)
 * [“Untitled” (Perfect Lovers) - Félix González-Torres](https://brooklynrail.org/2017/06/artseen/Felix-Gonzalez-Torres)
+* [Scroll-o-meter](https://sarahrothberg.com/SCROLL-O-METER)
+* [Coïguitum - Roberto Matta (1972)](https://1.bp.blogspot.com/-pwrhMhA6AqM/Tsp5Ah0lpHI/AAAAAAAAECw/KLg0Zjyc9sQ/s1600/coigitum.jpg)
 
 #### People of Interest
 * Sarah Rothberg
+* Char Davies
+* Dorothy Santos
 * Zach Lieberman
+* Jaron Lanier
+* Joey Lee
+* Taeyoon Choi
+* Arielle Hein
 
 Umwelt
   * [Definition](https://en.wikipedia.org/wiki/Umwelt)
@@ -122,7 +133,6 @@ Umwelt
 Books I want to read:
 * [Virtual Art: From Illusion to Immersion](https://www.amazon.com/Virtual-Art-Illusion-Immersion-Leonardo/dp/0262572230)
 * [Sensation and Perception](https://www.amazon.com/Sensation-Perception-Stanley-Coren-dp-0155001035/dp/0155001035/ref=mt_hardcover?_encoding=UTF8&me=&qid=)
-* [The Doors of Perception](https://maps.org/images/pdf/books/HuxleyA1954TheDoorsOfPerception.pdf)
 
 Feedback from Aidan:
 > "I argue that this architecture of information broadcast is invasive because its goal is to persuade the user to keep consuming –i.e., to resign their will of quitting the app– and by this means smuggling adds of third parties." --> this seems like an important understanding!  I think the focus on time-scales is a great way to explore different, simultaneous realities.  On a very basic level, different academic disciplines think  on different time-scales (dance --> sociology --> history --> geology).  I wonder if there are individuals who actually experience these different time scales in a more visceral (non-intellectual) way.  Does activism generate a sense of immediacy?  What brings about a longer time-scale?  Spiritual work?   I don't know....  Excited to see how you experiment with this!
