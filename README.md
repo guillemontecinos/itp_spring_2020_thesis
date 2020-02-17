@@ -185,3 +185,17 @@ The main goal during my thesis is to focus primarily on the artistic development
 * Week 7 - 8: After the midterm, and considering the feedback given, evaluate which of the experiments better frame my concept (if any) and use it as a base to develop a bigger piece that encloses the whole idea of my research. If the feedback given is negative in that regard, re-frame my concepts and develop one or two new experiments that could end being my final project.
 * Weeks 8 - 11: Fabricate the last version of my thesis project(s).
 * Week 11: User testing & documenting.
+
+## Ideation - Week 3
+Exquisite corpse.
+A madlib-based [exquisite corpse](https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/week_4/exquisite_corpse.js) exercise was run to generate [40 random prompts](https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/week_4/good_results.md) based on concepts I've addressed during my ideation process.
+
+Curated Results:
+
+1. My thesis criticizes internet through a/an [post-human] digital collection. Components: maps & thread (1) 
+2. My thesis simulates scrolling down through a/an aesthetic video art. Components: mobile phone & projector (4) 
+3. My thesis tensions mental space through a/an metaphoric [recursive] sound [audiovisual] installation. Components: microphone & maps (22)
+4. My thesis criticizes national identity through a/an metaphoric video art. Components: sand & paper (27)
+5. My thesis tensions violence [on the internet] through a/an expressive sculpture. Components: AR filter & paint (15)
+6. My thesis deconstructs hallucination through a/an metaphoric data visualization. Components: whatsapp stickers & headphones (40)
+
