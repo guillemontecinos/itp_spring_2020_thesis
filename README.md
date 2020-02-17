@@ -143,3 +143,66 @@ Feedback from Gabe:
 > What sort of active experiments could you come up with that would explore your question of whether different time realities could occur simultaneously in one reality?
 
 > It seems that there are many different scales of time already in our own reality? https://taeyoonchoi.com/2015/08/in-search-of-personalized-time/
+
+## Thesis Statement - Week 3
+
+### Deformed Realities – A critical approach to the effect of technologies in human perception of reality
+My thesis research addresses the idea of reality, represented by the tension between time and virtual space, and how it is mediated in our everyday life by our relationship with technology, particularly internet and social media.
+
+I am interested in this topic because I have had lots of trouble with experiencing the political process of Chile through social media, specifically Instagram. In this medium, a simulacrum of my country’s reality is broadcasted to me creating a tension between home’s current context and the environment I live in, undermining the idea of reality. This affects my perception of reality because Instagram overflows my phone with content I don’t necessarily want to consume, and the large amounts of time spent on this deform my perception of time and space.
+
+It will be a series of pieces that inquiry about the meaning of reality in our technology-mediated time.
+
+### Research
+#### Major Influences, Similar Projects
+* [The Deep Listener](https://experiments.withgoogle.com/augmentedarchitecture)
+* [Relative realities. An enhancement of reality](http://archive.aec.at/prix/showmode/15272/)
+* [“Untitled” (Perfect Lovers) - Félix González-Torres](https://brooklynrail.org/2017/06/artseen/Felix-Gonzalez-Torres)
+* [Scroll-o-meter](https://sarahrothberg.com/SCROLL-O-METER)
+* [Coïguitum - Roberto Matta (1972)](https://1.bp.blogspot.com/-pwrhMhA6AqM/Tsp5Ah0lpHI/AAAAAAAAECw/KLg0Zjyc9sQ/s1600/coigitum.jpg)
+
+#### Research Plan/Approach
+My research plan for the rest of the semester consists in a short review around the concept of time and how humans perceive it, and a experiment-based research of the tension between time and virtual space in the mediation of reality by technologies like the mobile phone, mixed realities and social media. This practical research will consist in a series of experiments presented as artistic artwork, carried out in different mediums and formats, mostly using technologies such as AR, VR, computer vision, sound processing and machine learning.
+
+#### Experts
+* Sarah Rothberg
+* Char Davies
+* Dorothy Santos
+* Zach Lieberman
+* Jaron Lanier
+* Joey Lee
+* Taeyoon Choi
+* Arielle Hein
+
+#### Bibliography
+* Baudrillard, J. (1994). Simulacra and simulation. University of Michigan press.
+* Davies, C. (2003). Rethinking VR: Key concepts and concerns. Hybrid Reality: Art, Technology and Human Factor. International Society on Virtual Systems and Multimedia, Montreal, Canada, 253-262.
+* De Certeau, M. (1984). The Practice of Everyday Life: Michel de Certeau.
+* Deely, J. (2001). Umwelt.
+* [Eagleman, D (2015). Can we create new senses for humans? Ted Talk](https://www.ted.com/talks/david_eagleman_can_we_create_new_senses_for_humans#t-1183976)
+* Elden, S. (2007). There is a politics of space because space is political: Henri Lefebvre and the production of space. Radical philosophy review, 10(2), 101-116.
+* Fisher, M. (2009). Capitalist realism: Is there no alternative?. John Hunt Publishing.
+* Foucault, M., & Miskowiec, J. (1986). Of other spaces. diacritics, 16(1), 22-27.
+* Greenfield, A. (2017). Radical technologies: The design of everyday life. Verso Books.
+* Haraway, D. (2006). A cyborg manifesto: Science, technology, and socialist-feminism in the late 20th century. In The international handbook of virtual learning environments (pp. 117-158). Springer, Dordrecht.
+* Huxley, A. (1952). The doors of perception. Mental, 98, 2-24.
+* [Kelly, K. (2019). AR Will Spark the Next Big Tech Platform—Call It Mirrorworld. Wired](https://www.wired.com/story/mirrorworld-ar-next-big-tech-platform/)
+
+#### Research summary
+My research firstly addressed the role of Augmented Reality in the mediation and perception of space. For this, it was studied how humans perceive space, what has been the role of technology in the production of space during time, and what are the biases inherited in the reproduction of space by 3D engines.
+
+Then, it was inquired what is reality and how technology (particularly social media) affects our perception of it, what is simulation and how every species’ umwelt affect their understanding of time and space. Time and virtual space appear as the most relevant representations of reality to be explored during this process.
+
+### Implementation
+#### Relevant experience
+I don’t precisely know what technologies I’m going to use yet, but I guess my work will be mostly digital or at least coding-based. I’m pretty sure my thesis will not involve high complexity fabrication skills. I have pretty good experience coding in languages as JS, C++ and C#, which would facilitate my work if I develop web-based pieces, or use tools such as Unity or openFrameworks. I might be using shaders at some point, which I don’t have experience with, but I’ll try to keep it simple in order not to spend too much time on learning it.
+
+#### Knowns & Unknowns
+The main goal during my thesis is to focus primarily on the artistic development of the idea more than the technical complexity of it. This means, I want the technical implementation of the project to be at the service of the concept, and not the concept to be built around certain technology. In this sense, there is no particular problem to solve since I haven’t chosen the mediums I am going to use yet.
+
+#### Implementation plan
+* Week 4 - 7: Keep carrying on theoretical research between now and the midterm.
+* Week 4 - 7: Develop 3 artistic experiments that address the concept described between now and the midterm.
+* Week 7 - 8: After the midterm, and considering the feedback given, evaluate which of the experiments better frame my concept (if any) and use it as a base to develop a bigger piece that encloses the whole idea of my research. If the feedback given is negative in that regard, re-frame my concepts and develop one or two new experiments that could end being my final project.
+* Weeks 8 - 11: Fabricate the last version of my thesis project(s).
+* Week 11: User testing & documenting.
