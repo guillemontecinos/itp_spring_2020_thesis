@@ -192,7 +192,7 @@ A madlib-based [exquisite corpse](https://github.com/guillemontecinos/itp_spring
 
 Curated Results:
 
-1. My thesis criticizes internet through a/an [post-human] digital collection. Components: maps & thread (1) 
+1. My thesis criticizes the internet through a/an [post-human] digital collection. Components: maps & thread (1) 
 2. My thesis simulates scrolling down through a/an aesthetic video art. Components: mobile phone & projector (4) 
 3. My thesis tensions mental space through a/an metaphoric [recursive] sound [audiovisual] installation. Components: microphone & maps (22)
 4. My thesis criticizes national identity through a/an metaphoric video art. Components: sand & paper (27)
