@@ -103,28 +103,7 @@ On the other hand, I usually spend a lot of time consuming social media (most of
 Inspired on the reflections I got from the experiment, I'd like to spend next week researching about the idea of time and how perception of reality is affected by this concept. Now the question *can different time realities –or time scales– occur simultaneously in one reality?* takes relevance and can be used as a guide for next week's explorations.
 
 
-### Appendix
-
-#### Title
-Deformed Realities – A critical approach to the effect of technologies in human perception of reality
-
-#### Precedents
-* [The Deep Listener](https://experiments.withgoogle.com/augmentedarchitecture)
-* [Relative realities. An enhancement of reality](http://archive.aec.at/prix/showmode/15272/)
-* [“Untitled” (Perfect Lovers) - Félix González-Torres](https://brooklynrail.org/2017/06/artseen/Felix-Gonzalez-Torres)
-* [Scroll-o-meter](https://sarahrothberg.com/SCROLL-O-METER)
-* [Coïguitum - Roberto Matta (1972)](https://1.bp.blogspot.com/-pwrhMhA6AqM/Tsp5Ah0lpHI/AAAAAAAAECw/KLg0Zjyc9sQ/s1600/coigitum.jpg)
-
-#### People of Interest
-* Sarah Rothberg
-* Char Davies
-* Dorothy Santos
-* Zach Lieberman
-* Jaron Lanier
-* Joey Lee
-* Taeyoon Choi
-* Arielle Hein
-
+### Appendix Week 2
 Umwelt
   * [Definition](https://en.wikipedia.org/wiki/Umwelt)
   * [David Eagleman](https://www.eagleman.com/blog/umwelt) [Ted Talk](https://www.ted.com/talks/david_eagleman_can_we_create_new_senses_for_humans#t-1183976)
