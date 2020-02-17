@@ -21,7 +21,7 @@ let concept = [
     'violence',
     'social injustice',
     'delusion',
-    'hallucionation',
+    'hallucination',
     'dissociation'
 ]
 
@@ -54,7 +54,7 @@ let verb = [
     'disrupts',
     'subverts',
     'connects',
-    'critics',
+    'criticizes',
     'acknowledges',
     'tensions',
     'analizes',
@@ -65,7 +65,7 @@ let verb = [
     'simulates',
     'projects',
     'theorizes',
-    'asimilates',
+    'assimilates',
     'exposes',
     'condems',
     'associates',
@@ -117,7 +117,7 @@ let materials = [
     'microphone',
     'mouse',
     'arcade joystick',
-    'phono catridge',
+    'phono cartridge',
     'printer',
     'axidraw',
     '3d print',
