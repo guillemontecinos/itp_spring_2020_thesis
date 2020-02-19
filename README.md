@@ -187,8 +187,7 @@ The main goal during my thesis is to focus primarily on the artistic development
 * Week 11: User testing & documenting.
 
 ## Ideation - Week 3
-Exquisite corpse.
-A madlib-based [exquisite corpse](https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/week_4/exquisite_corpse.js) exercise was run to generate [40 random prompts](https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/week_4/good_results.md) based on concepts I've addressed during my ideation process.
+By the end of this week, as a means to ground my ideas I carried out an *exquisite corpse* exercise. A madlib-based [exquisite corpse](https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/week_4/exquisite_corpse.js) exercise was run to generate [40 random prompts](https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/week_4/good_results.md) based on concepts I've addressed during my ideation process.
 
 Curated Results:
 
@@ -199,3 +198,14 @@ Curated Results:
 5. My thesis tensions violence [on the internet] through a/an expressive sculpture. Components: AR filter & paint (15)
 6. My thesis deconstructs hallucination through a/an metaphoric data visualization. Components: whatsapp stickers & headphones (40)
 
+## Experiment 1 - Week 4
+The first experiment of this series started with the promtp:
+> My thesis tensions mental space through a/an metaphoric [recursive] sound [audiovisual] installation. Components: microphone & maps.
+
+I started the develop of this exercise with the question: how to represent the mental space?
+* The mental space is an abstraction of the physical world
+* Is logic-based
+* Built from and conditioned by our experience regarding the space
+* Conditioned by our political and religious stands
+
+Maps play a key role in this process, since the mental space is also a mapping space (or a mental map of space)
