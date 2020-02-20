@@ -231,16 +231,16 @@ A great referent to this project is The Coigïtum, a painting by the chilean pai
 
 This painting seems to me to be a good representation of a mental space, understing it like the mind representation of all the phyisical spaces we have affinity with, where very distant and unrelated spaces blur one into another, mapping emotional links aming the space.
 
-An approach to create a sort of artistic prototype based on this prompt is to build a 3D sculpture which represents my mental space by placing in the same site physical representations of miningful locations regarding my experience.
+An approach to create a prototype based on this prompt is to build a 3D sculpture which represents my mental space by placing in the same site physical representations of miningful locations regarding my experience. In this sense, the first I did was to take the painting and setting it as a 360 image, as a way of exploring the transition from 2D to 3D. It's interesting how the piece makes sense as a volumetric image, which talks about it was probably designed as an immersive world.
 
 <p align="center">
   <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/assets/coigitum-360.gif" align="middle" width="80%">
 </p>
 
-
+Then I explored how to take 2D panoramas and play with their volumetric essence. Even thoug 360 images are ment to be displayed as a sphere that represents space, we can also take the equirectangular images and deform them in order to create a sensation of physicality but also to blur them. 
 
 <p align="center">
   <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/week_4/experiment-1/documentation/troutman-panorama-deformed-1.png" align="middle" width="80%">
 </p>
 
-TODO: write a little more description on the process and result.
+After experimentig with this I realized that I'm still missing some connections in this idea, so I decided to pause this experiment and move forward with another one.
