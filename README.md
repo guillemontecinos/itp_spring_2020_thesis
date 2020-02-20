@@ -243,4 +243,4 @@ Then I explored how to take 2D panoramas and play with their volumetric essence.
   <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/week_4/experiment-1/documentation/troutman-panorama-deformed-1.png" align="middle" width="80%">
 </p>
 
-After experimentig with this I realized that I'm still missing some connections in this idea, so I decided to pause this experiment and move forward with another one.
+After experimentig with it I realized I'm still missing some connections in this idea, what kind of input the piece takes to map the different locations to the representation of mental space? or what is the output I expect to have? Because of this, I decided to pause this experiment and move forward with another one.
