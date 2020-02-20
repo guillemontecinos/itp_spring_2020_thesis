@@ -199,14 +199,29 @@ Curated Results:
 6. My thesis deconstructs hallucination through a/an metaphoric data visualization. Components: whatsapp stickers & headphones (40)
 
 ## Experiment 1 - Week 4
-The first experiment of this series started with the promtp:
+The first experiment of this series started with the following promtp:
 > My thesis tensions mental space through a/an metaphoric [recursive] sound [audiovisual] installation. Components: microphone & maps.
 
-I started the develop of this exercise with the question: how to represent the mental space?
-* The mental space is an abstraction of the physical world
-* Is logic-based
-* Built from and conditioned by our experience regarding the space
-* Conditioned by our political and religious stands
+The development of the exercise started with some questions: 
+* How to represent the mental space?
+  * The mental space is an abstraction of the physical world
+  * Is logic-based
+  * Built from and conditioned by our experience regarding the space
+  * Conditioned by our political and religious stands
+* How mental space gets in tension with the actual physical space?
+  * Maps are representations of the space
+  * Then, mental space might conditioned by maps
+* How to connect places that are not contiguous in physical space but blur into each other in our mental spaces? Like in Radiohead's [Daydreaming](https://www.youtube.com/watch?v=TTAU7lLDZYU)
+* How to capture one's experience on physical space?
+  * Is personal positional data a good way of representing it?
+* In my personal case, my bedroom in Santiago is one step away from mine in Brooklyn. When falling asleep I can trabel instantly from one place to another. Space blurs and reality too.
+* Social media can be another way of mapping information.
+
+Based in all this notes I took, I developed the following mindmap:
+<p align="center">
+  <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/assets/experiment-1-mindmap.jpeg"
+</p>
+
 
 A great referent to this project is The Coigïtum, a painting by the chilean painter [Roberto Matta](https://en.wikipedia.org/wiki/Roberto_Matta) that –in my understanding– represents a whole world. Different non-human shapes spread in the space represent different moments or emotions from an unreal world. Even though all the elements don't fit with my visual knowledge, the composition makes me feel all of them interact in an organic tension of relationships.
 
