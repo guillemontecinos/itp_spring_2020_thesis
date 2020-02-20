@@ -222,3 +222,4 @@ My first approach to create a sort of artistic prototype based on this prompt is
   <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/week_4/experiment-1/documentation/troutman-panorama-deformed-1.png" align="middle" width="80%">
 </p>
 
+TODO: write a little more description on the process and result.
