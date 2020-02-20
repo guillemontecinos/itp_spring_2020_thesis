@@ -231,7 +231,13 @@ A great referent to this project is The Coigïtum, a painting by the chilean pai
 
 This painting seems to me to be a good representation of a mental space, understing it like the mind representation of all the phyisical spaces we have affinity with, where very distant and unrelated spaces blur one into another, mapping emotional links aming the space.
 
-My first approach to create a sort of artistic prototype based on this prompt is to build a 3D sculpture which represents my mental space by placing in the same site physical representations of miningful locations regarding my experience.
+An approach to create a sort of artistic prototype based on this prompt is to build a 3D sculpture which represents my mental space by placing in the same site physical representations of miningful locations regarding my experience.
+
+<p align="center">
+  <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/assets/coigitum-360.gif" align="middle" width="80%">
+</p>
+
+
 
 <p align="center">
   <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/week_4/experiment-1/documentation/troutman-panorama-deformed-1.png" align="middle" width="80%">
