@@ -219,7 +219,7 @@ The development of the exercise started with some questions:
 
 Based in all this notes I took, I developed the following mindmap:
 <p align="center">
-  <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/assets/experiment-1-mindmap.jpeg"
+  <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/assets/experiment-1-mindmap.jpeg" align="middle" width="80%">
 </p>
 
 
