@@ -208,4 +208,10 @@ I started the develop of this exercise with the question: how to represent the m
 * Built from and conditioned by our experience regarding the space
 * Conditioned by our political and religious stands
 
-Maps play a key role in this process, since the mental space is also a mapping space (or a mental map of space)
+A great referent to this project is The Coigïtum, a painting by the chilean painter [Roberto Matta](https://en.wikipedia.org/wiki/Roberto_Matta) that –in my understanding– represents a whole world. Different non-human shapes spread in the space represent different moments or emotions from an unreal world. Even though all the elements don't fit with my visual knowledge, the composition makes me feel all of them interact in an organic tension of relationships.
+
+<p align="center">
+  <img src="https://1.bp.blogspot.com/-pwrhMhA6AqM/Tsp5Ah0lpHI/AAAAAAAAECw/KLg0Zjyc9sQ/s1600/coigitum.jpg" align="middle" width="80%">
+</p>
+
+This painting seems to me to be a good representation of a mental space, understing it like the mind representation of all the phyisical spaces we have affinity with, where very distant and unrelated spaces blur one into another, mapping emotional links aming the space.
