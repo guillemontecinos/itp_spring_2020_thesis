@@ -1,0 +1,45 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+.infinite
+{
+    width: 100%;
+    height: 770px;
+    background: #ff0;
+}
+.infinite div
+{
+    background: #000;
+    width: 100%;
+    height: 100%;
+}
+.infinite div:nth-child(7n + 1)
+{
+    background: #ef5777;
+}
+.infinite div:nth-child(7n + 2)
+{
+    background: #575fcf;
+}
+.infinite div:nth-child(7n + 3)
+{
+    background: #ffc048;
+}
+.infinite div:nth-child(7n + 4)
+{
+    background: #05c46b;
+}
+.infinite div:nth-child(7n + 5)
+{
+    background: #1e272e;
+}
+.infinite div:nth-child(7n + 6)
+{
+    background: #34e7e4;
+}
+.infinite div:nth-child(7n + 7)
+{
+    background: #808e9b;
+}

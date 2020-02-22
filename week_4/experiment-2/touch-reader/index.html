@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+        <style>
+            body
+            {
+                margin: 0;
+                padding: 0;
+            }
+            .infinite
+            {
+                width: 100%;
+                /* height: 770px; */
+                height: 100%;
+                background: #ff0;
+            }
+            .infinite div
+            {
+                background: #000;
+                width: 100%;
+                height: 100%;
+            }
+            .infinite div:nth-child(7n + 1)
+            {
+                background: #ef5777;
+            }
+            .infinite div:nth-child(7n + 2)
+            {
+                background: #575fcf;
+            }
+            .infinite div:nth-child(7n + 3)
+            {
+                background: #ffc048;
+            }
+            .infinite div:nth-child(7n + 4)
+            {
+                background: #05c46b;
+            }
+            .infinite div:nth-child(7n + 5)
+            {
+                background: #1e272e;
+            }
+            .infinite div:nth-child(7n + 6)
+            {
+                background: #34e7e4;
+            }
+            .infinite div:nth-child(7n + 7)
+            {
+                background: #808e9b;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="infinite">
+            <div>
+
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+            // This script creates the infinite scroll by adding the new empty divs
+            // Source: https://www.youtube.com/watch?v=8nFffpYieBI
+            $(window).scroll(function(){
+                if ($(window).scrollTop() >= $(document).height() - $(window).height() - 50) {
+                    $('.infinite').append('<div></div>')
+                }
+            })
+        </script>
+        <script>
+            // TODO: detect swipe and send that data to the server
+            // Use this example: http://www.javascriptkit.com/javatutors/touchevents2.shtml
+            // Resources: https://developer.mozilla.org/en-US/docs/Web/API/Touch_events
+            
+            // This scripts instantiates the touch listeners
+            window.addEventListener('load', function(){
+             
+                // var box1 = document.window
+                // var statusdiv = document.getElementById('statusdiv')
+                var startx = 0
+                var dist = 0
+             
+                document.body.addEventListener('touchstart', function(e){
+                    var touchobj = e.changedTouches[0] // reference first touch point (ie: first finger)
+                    startx = parseInt(touchobj.clientX) // get x position of touch point relative to left edge of browser
+                    // statusdiv.innerHTML = 'Status: touchstart<br> ClientX: ' + startx + 'px'
+                    console.log('Status: touchstart<br> ClientX: ' + startx + 'px')
+                    e.preventDefault()
+                }, false)
+             
+                document.body.addEventListener('touchmove', function(e){
+                    var touchobj = e.changedTouches[0] // reference first touch point for this event
+                    var dist = parseInt(touchobj.clientX) - startx
+                    // statusdiv.innerHTML = 'Status: touchmove<br> Horizontal distance traveled: ' + dist + 'px'
+                    console.log('Status: touchmove<br> Horizontal distance traveled: ' + dist + 'px')
+                    e.preventDefault()
+                }, false)
+
+                document.body.addEventListener('touchend', function(e){
+                    var touchobj = e.changedTouches[0] // reference first touch point for this event
+                    // statusdiv.innerHTML = 'Status: touchend<br> Resting x coordinate: ' + touchobj.clientX + 'px'
+                    console.log('Status: touchend<br> Resting x coordinate: ' + touchobj.clientX + 'px')
+                    e.preventDefault()
+                }, false)
+            }, false)
+        </script>
+    </body>
+</html>
