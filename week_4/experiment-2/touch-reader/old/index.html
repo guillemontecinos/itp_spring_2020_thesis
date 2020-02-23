@@ -51,57 +51,100 @@
         </style>
     </head>
     <body>
+        <!-- <div class="infinite" id="infinite"> -->
         <div class="infinite">
             <div>
 
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
         <script type="text/javascript">
+
+            let socket = io.connect('http://192.168.1.9')
+            socket.on('connection answer', function(data){
+                console.log(data)
+                // TODO: move socket.emit to the event of finding a swipe. firstly try connectin the phone here and receiven known data. then generalize to send info under specific events
+            })
+
             // This script creates the infinite scroll by adding the new empty divs
             // Source: https://www.youtube.com/watch?v=8nFffpYieBI
+            let elapsedTime,
+                prevTime = 0
+                
             $(window).scroll(function(){
                 if ($(window).scrollTop() >= $(document).height() - $(window).height() - 50) {
                     $('.infinite').append('<div></div>')
+
+                    let currentTime = new Date().getTime()
+                    if (prevTime =! 0) {
+                        elapsedTime = currentTime - prevTime
+                        // speed = $(window).height() / elapsedTime
+                        socket.emit('speed event', {my: 'swiped', time: elapsedTime})
+                        console.log('Speed: ' + speed + ' px/ms')
+                    }
+                    prevTime = currentTime
                 }
             })
         </script>
-        <script>
-            // TODO: detect swipe and send that data to the server
-            // Use this example: http://www.javascriptkit.com/javatutors/touchevents2.shtml
+        <!-- <script>
+            // Source code: http://www.javascriptkit.com/javatutors/touchevents2.shtml
             // Resources: https://developer.mozilla.org/en-US/docs/Web/API/Touch_events
             
-            // This scripts instantiates the touch listeners
+
             window.addEventListener('load', function(){
-             
-                // var box1 = document.window
-                // var statusdiv = document.getElementById('statusdiv')
-                var startx = 0
-                var dist = 0
-             
-                document.body.addEventListener('touchstart', function(e){
-                    var touchobj = e.changedTouches[0] // reference first touch point (ie: first finger)
-                    startx = parseInt(touchobj.clientX) // get x position of touch point relative to left edge of browser
-                    // statusdiv.innerHTML = 'Status: touchstart<br> ClientX: ' + startx + 'px'
-                    console.log('Status: touchstart<br> ClientX: ' + startx + 'px')
+                // TODO: what's the best representation of the screen that is nos as passive as just document?
+                // let touchSurface = document.getElementById('infinite'),
+                let touchSurface = document.body,
+                startX,
+                startY,
+                threshold = 150,
+                allowedTime = 200,
+                elapsedTime,
+                startTime,
+                dist
+
+                function handleswipe(isRightSwipe){
+                    if (isRightSwipe) {
+                        // consoles data only on swipe
+                        let speed = dist / elapsedTime
+                        console.log('Speed: ' + speed + ' px/ms')
+                        // TODO: Send data to the server
+                        socket.emit('speed event', {my: speed})
+                        // socket.emit('speed event', {my: 'Swiped succesfully'})
+                    }
+                }
+
+                touchSurface.addEventListener('touchstart', function(e){
+                    touchSurface.innerHTML = ''
+                    let touchObj = e.changedTouches[0]
+                    dist = 0
+                    startX = touchObj.pageX
+                    startY = touchObj.pageY
+                    // startX = touchObj.screenX
+                    // startY = touchObj.screenY
+                    startTime = new Date().getTime()
                     e.preventDefault()
+                    // debug
+                    // socket.emit('click event', {click: 'Screen clicked'})
                 }, false)
-             
-                document.body.addEventListener('touchmove', function(e){
-                    var touchobj = e.changedTouches[0] // reference first touch point for this event
-                    var dist = parseInt(touchobj.clientX) - startx
-                    // statusdiv.innerHTML = 'Status: touchmove<br> Horizontal distance traveled: ' + dist + 'px'
-                    console.log('Status: touchmove<br> Horizontal distance traveled: ' + dist + 'px')
+
+                touchSurface.addEventListener('touchmove', function(e){
                     e.preventDefault()
                 }, false)
 
-                document.body.addEventListener('touchend', function(e){
-                    var touchobj = e.changedTouches[0] // reference first touch point for this event
-                    // statusdiv.innerHTML = 'Status: touchend<br> Resting x coordinate: ' + touchobj.clientX + 'px'
-                    console.log('Status: touchend<br> Resting x coordinate: ' + touchobj.clientX + 'px')
+                touchSurface.addEventListener('touchend', function(e){
+                    let touchObj = e.changedTouches[0]
+                    dist = Math.abs(touchObj.pageY - startY)
+                    // dist = Math.abs(touchObj.screenY - startY)
+                    elapsedTime = new Date().getTime() - startTime
+                    let swipeRightBol = (elapsedTime <= allowedTime && dist >= threshold && Math.abs(touchObj.pageX - startX) <= 100)
+                    // let swipeRightBol = (elapsedTime <= allowedTime && dist >= threshold && Math.abs(touchObj.screenX - startX) <= 100)
+                    handleswipe(swipeRightBol)
                     e.preventDefault()
                 }, false)
-            }, false)
-        </script>
+
+            }, false)   
+        </script> -->
     </body>
 </html>

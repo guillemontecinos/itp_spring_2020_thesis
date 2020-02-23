@@ -38,9 +38,14 @@ app.get("/", function (req, res) {
 //=============================
 
 io.on('connection', function(socket){
+	console.log('Device Connected')
 	socket.emit('connection answer', {hello: 'world'})
+	// socket.on('click event', function(data){
+	// 	console.log(data.click)
+	// })
 	socket.on('speed event', function(data){
 		console.log(data.my)
+		console.log('Elapsed time: ' + data.time + ' ms')
 	})
 })
 

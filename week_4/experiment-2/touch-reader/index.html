@@ -51,86 +51,26 @@
         </style>
     </head>
     <body>
-        <!-- <div class="infinite" id="infinite"> -->
         <div class="infinite">
-            <div>
-
-            </div>
+            <div></div>
         </div>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
         <script type="text/javascript">
+            let socket = io.connect('http://192.168.1.9')
+            socket.on('connection answer', function(data){
+                console.log(data)
+            })
             // This script creates the infinite scroll by adding the new empty divs
             // Source: https://www.youtube.com/watch?v=8nFffpYieBI
             $(window).scroll(function(){
                 if ($(window).scrollTop() >= $(document).height() - $(window).height() - 50) {
                     $('.infinite').append('<div></div>')
+                    // Sends each swipe's timestamp to the server
+                    let currentTime = new Date().getTime()
+                    socket.emit('speed event', {my: 'swiped', time: currentTime})
                 }
             })
-        </script>
-        <script>
-            // Source code: http://www.javascriptkit.com/javatutors/touchevents2.shtml
-            // Resources: https://developer.mozilla.org/en-US/docs/Web/API/Touch_events
-
-            let socket = io.connect('http://192.168.1.6')
-            socket.on('connection answer', function(data){
-                console.log(data)
-                // TODO: move socket.emit to the event of finding a swipe. firstly try connectin the phone here and receiven known data. then generalize to send info under specific events
-                socket.emit('speed event', {my: 'test data'})
-
-                window.addEventListener('load', function(){
-                    // TODO: what's the best representation of the screen that is nos as passive as just document?
-                    // let touchSurface = document.getElementById('infinite'),
-                    let touchSurface = document,
-                    startX,
-                    startY,
-                    threshold = 150,
-                    allowedTime = 200,
-                    elapsedTime,
-                    startTime,
-                    dist
-
-                    function handleswipe(isRightSwipe){
-                        if (isRightSwipe) {
-                            // consoles data only on swipe
-                            let speed = dist / elapsedTime
-                            console.log('Speed: ' + speed + ' px/ms')
-                            // TODO: Send data to the server
-                            socket.emit('speed event', {my: speed})
-                        }
-                        // else {
-                        //     // touchSurface.innerHTML = 'Condition for right swipe not met yet'
-                        // }
-                    }
-
-                    touchSurface.addEventListener('touchstart', function(e){
-                        touchSurface.innerHTML = ''
-                        let touchObj = e.changedTouches[0]
-                        dist = 0
-                        startX = touchObj.pageX
-                        startY = touchObj.pageY
-                        startTime = new Date().getTime()
-                        e.preventDefault()
-                    }, false)
-
-                    touchSurface.addEventListener('touchmove', function(e){
-                        e.preventDefault()
-                    }, false)
-
-                    touchSurface.addEventListener('touchend', function(e){
-                        let touchObj = e.changedTouches[0]
-                        dist = Math.abs(touchObj.pageY - startY)
-                        elapsedTime = new Date().getTime() - startTime
-                        let swipeRightBol = (elapsedTime <= allowedTime && dist >= threshold && Math.abs(touchObj.pageX - startX) <= 100)
-                        handleswipe(swipeRightBol)
-                        e.preventDefault()
-                    }, false)
-
-                }, false)   
-            })
-            
-            
-
         </script>
     </body>
 </html>
