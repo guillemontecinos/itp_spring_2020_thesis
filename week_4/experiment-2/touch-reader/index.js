@@ -1,9 +1,16 @@
 const express = require("express")
+const app = express()
 const path = require('path')
 const bodyParser = require('body-parser')
-const url = require('url')
+// const url = require('url')
+const server = require('http').Server(app)
+const io = require('socket.io')(server)
 // const OSC = require('osc-js')
-const app = express()
+const expressPort = 3000
+const httpPort = 80
+
+server.listen(httpPort)
+
 
 app.use(bodyParser.urlencoded({ extended: false }))
 // app.use(bodyParser.json())
@@ -24,14 +31,22 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.get("/", function (req, res) {
 	// Send UI
 	res.sendFile(path.join(__dirname + '/index.html'))
-});
+})
 
-// app.post('/post', function(req, res){
-//     midiBuffer.push(req.body)
-//     console.log(midiBuffer)
-//     res.send('Post received')
-//     console.log('array lenght: ' + midiBuffer.length)
-// })
+//=============================
+// Sockets connection to client
+//=============================
+
+io.on('connection', function(socket){
+	socket.emit('connection answer', {hello: 'world'})
+	socket.on('speed event', function(data){
+		console.log(data.my)
+	})
+})
+
+//=====================
+// osc connection to oF
+//=====================
 
 // osc.on('/time', message => {
 //     // console.log(midiBuffer)
@@ -100,8 +115,8 @@ app.get("/", function (req, res) {
 //     }
 // })
 
-app.listen(3000, function () {
-	console.log("Example app listening on port 3000!")
+app.listen(expressPort, function () {
+	console.log("Example app listening on port " + expressPort)
 })
 
 // osc.open({ port: 9913 }) // bind socket to localhost:9912
