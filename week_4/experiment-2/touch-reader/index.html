@@ -72,7 +72,7 @@
             // Source code: http://www.javascriptkit.com/javatutors/touchevents2.shtml
             // Resources: https://developer.mozilla.org/en-US/docs/Web/API/Touch_events
 
-            let socket = io.connect('http://localhost')
+            let socket = io.connect('http://192.168.1.6')
             socket.on('connection answer', function(data){
                 console.log(data)
                 // TODO: move socket.emit to the event of finding a swipe. firstly try connectin the phone here and receiven known data. then generalize to send info under specific events
@@ -93,8 +93,10 @@
                     function handleswipe(isRightSwipe){
                         if (isRightSwipe) {
                             // consoles data only on swipe
-                            console.log('Speed: ' + dist / elapsedTime + ' px/ms')
+                            let speed = dist / elapsedTime
+                            console.log('Speed: ' + speed + ' px/ms')
                             // TODO: Send data to the server
+                            socket.emit('speed event', {my: speed})
                         }
                         // else {
                         //     // touchSurface.innerHTML = 'Condition for right swipe not met yet'
