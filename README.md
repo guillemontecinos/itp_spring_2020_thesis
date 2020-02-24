@@ -274,3 +274,15 @@ I have pretty good experience coding in languages as JS, C++ and C#, which would
 The first of the experiments I will carry out implies the design of a system that displays a infinite scroll website in a mobile phone, senses the scrolling speed and sends it to a server. Then the server forwards the data to an openFrameworks app that will simulate the deformation of the space around the user. This prototype requires the use of HTML, JavaScript, Node.js, Web Sockets, OSC and C++.
 
 The second experiment will imply the manipulation of cartographic data that will be used to retrieve 2D and 3D graphics from Google Maps and use them to speculatively represent the mental space of a person, in Unity. This prototype requires the use of JS, GIZ and C#. The knowledge related to cartography, maps and mapping will be acquired in the class All Maps Lie, during the second half of the semester.
+
+## Interview Preparation - Week 4
+
+### Experts
+1. Sarah Rothberg
+2. Char Davies
+3. Dorothy Santos
+4. Zach Lieberman
+5. Jaron Lanier
+6. Joey Lee
+7. Taeyoon Choi
+8. Arielle Hein
