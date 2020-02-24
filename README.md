@@ -244,3 +244,33 @@ Then I explored how to take 2D panoramas and play with their volumetric essence.
 </p>
 
 After experimentig with it I realized I'm still missing some connections in this idea, what kind of input the piece takes to map the different locations to the representation of mental space? or what is the output I expect to have? Because of this, I decided to pause this experiment and move forward with another one.
+
+## Thesis Statement (Reiteration) - Week 4
+
+### Deformed Realities – A critical approach to the effect of technologies in human perception of reality
+My thesis research addresses the idea of reality and how its perception is mediated and deformed when interacting with technology. Some interactions I’m interested in are scrolling down on social media, surfing Google Maps or going through an immersive experience on Mixed Realities in consideration on how affect perception of time and space.
+
+I got interested in this topic after witnessing the current political process in Chile through social media: a simulacrum of my country’s reality was broadcasted to me, tensioning the relationship with the environment I live in and altering the idea of reality. Starting from this experience I formulated the following research question: how spatial and temporal realities are mapped by different platforms and techniques, like Google Maps, Instagram, or Mixed Realities? and how that construction can be aligned, in tension or in correlation with one’s mental space?
+
+It will be a series of three pieces that inquiry about our relationship with technology and how it mediates and deforms our perception of reality. At this point I have clarity of two of the three pieces: one of them will explore the tension between our mental space and how it is built as an abstraction of the physical space. How emotions and our spatial experience affect this process? how our mental space is built and how maps, social media and the internet mediate this process? A second piece will use the gesture of scrolling down a screen as a metaphor of our relationship with social media and how it affects our perception of time and space.
+
+### Research
+
+#### Research Plan/Approach
+My research for the rest of the semester consists of the development of a series of practical experiments presented as artistic artwork. These experiments will be carried out in different mediums and formats, mostly using technologies such as AR, VR, computer vision, sound processing and machine learning. Through them I will explore the relationship between perception of temporal and spatial reality and the usage of technology such as mobile phones, the internet, social media, and Mixed Reality.
+
+#### Research summary
+My research firstly addressed the role of Augmented Reality in the mediation and perception of space. For this, it was studied how humans perceive space, what has been the role of technology in the production of space during time, and what are the biases inherited in the reproduction of space by 3D engines.
+
+Then, it was inquired what is reality and how technology (particularly social media) affects our perception of it, what is simulation and how every species’ umwelt affect their understanding of time and space. Time and virtual space appear as the most relevant representations of reality to be explored during this process.
+
+I need to carry out some more research regarding the effects of the internet and social media usage in the process of perception of time and space, in order to better frame the strategies I will take to create artistic work based on my research. This research will be brief and focused on the works I will develop during the rest of the semester.
+
+### Implementation
+#### Relevant experience
+I have pretty good experience coding in languages as JS, C++ and C#, which would facilitate my work if I develop web-based pieces, or use tools such as Unity or openFrameworks. I might be using shaders at some point, which I don’t have experience with, but I’ll try to keep it simple in order not to spend too much time on learning it.
+
+#### Knowns & Unknowns
+The first of the experiments I will carry out implies the design of a system that displays a infinite scroll website in a mobile phone, senses the scrolling speed and sends it to a server. Then the server forwards the data to an openFrameworks app that will simulate the deformation of the space around the user. This prototype requires the use of HTML, JavaScript, Node.js, Web Sockets, OSC and C++.
+
+The second experiment will imply the manipulation of cartographic data that will be used to retrieve 2D and 3D graphics from Google Maps and use them to speculatively represent the mental space of a person, in Unity. This prototype requires the use of JS, GIZ and C#. The knowledge related to cartography, maps and mapping will be acquired in the class All Maps Lie, during the second half of the semester.

@@ -36,7 +36,8 @@ app.get("/", function (req, res) {
 //=============================
 // Sockets connection to client
 //=============================
-
+// Source: https://socket.io/docs/#Using-with-Express
+// Resources: https://www.youtube.com/watch?v=soerr09FYCw
 io.on('connection', function(socket){
 	console.log('Device Connected')
 	socket.emit('connection answer', {hello: 'world'})

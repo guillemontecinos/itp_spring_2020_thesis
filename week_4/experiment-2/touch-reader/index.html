@@ -57,6 +57,7 @@
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
         <script type="text/javascript">
+            // Source: https://socket.io/docs/#Using-with-Express
             let socket = io.connect('http://192.168.1.9')
             socket.on('connection answer', function(data){
                 console.log(data)
