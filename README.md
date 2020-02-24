@@ -247,7 +247,7 @@ After experimentig with it I realized I'm still missing some connections in this
 
 ## Thesis Statement (Reiteration) - Week 4
 
-### Deformed Realities – A critical approach to the effect of technologies in human perception of reality
+### Deformed Realities
 My thesis research addresses the idea of reality and how its perception is mediated and deformed when interacting with technology. Some interactions I’m interested in are scrolling down on social media, surfing Google Maps or going through an immersive experience on Mixed Realities in consideration on how affect perception of time and space.
 
 I got interested in this topic after witnessing the current political process in Chile through social media: a simulacrum of my country’s reality was broadcasted to me, tensioning the relationship with the environment I live in and altering the idea of reality. Starting from this experience I formulated the following research question: how spatial and temporal realities are mapped by different platforms and techniques, like Google Maps, Instagram, or Mixed Realities? and how that construction can be aligned, in tension or in correlation with one’s mental space?
@@ -275,6 +275,26 @@ The first of the experiments I will carry out implies the design of a system tha
 
 The second experiment will imply the manipulation of cartographic data that will be used to retrieve 2D and 3D graphics from Google Maps and use them to speculatively represent the mental space of a person, in Unity. This prototype requires the use of JS, GIZ and C#. The knowledge related to cartography, maps and mapping will be acquired in the class All Maps Lie, during the second half of the semester.
 
+## Experiment 2 - Week 4
+My second experiment (after decided to keep the first one in hold) started with the following prompt:
+> My thesis simulates scrolling down through a/an aesthetic video art. Components: mobile phone & projector
+
+The first question that popped up into my mind was: how to represent the deformation of space and time?
+explain and show some referents.
+
+<p align="center">
+  <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/experiment-1/documentation/experiment-2-diagram.jpeg" align="middle" width="80%">
+</p>
+
+process of infinite scroll
+
+I wanted ro set an infinite scroll that added nth-child `<div>` elements when the scrolling bar reached the end of the screen. 
+
+At the same time I pursued to measure the scroll speed by setting an event listener attaced to the DOM element `document.body`. This solution didn't work properly becasue, as the document moved up, the touch event traveled on the screen with the event, so the point of reference was moving with the touch. As a consequence of this, the swipe gesture couldn't be measured.
+
+To solve this I decided tojust send the timestamp of every time a new `<div>` was appended to the document.
+
+
 ## Interview Preparation - Week 4
 
 ### Experts
@@ -286,3 +306,4 @@ The second experiment will imply the manipulation of cartographic data that will
 6. Joey Lee
 7. Taeyoon Choi
 8. Arielle Hein
+9. Patricion González Vivols
