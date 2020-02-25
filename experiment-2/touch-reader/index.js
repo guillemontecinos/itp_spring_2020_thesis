@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 // const url = require('url')
 const server = require('http').Server(app)
 const io = require('socket.io')(server)
-// const OSC = require('osc-js')
+const OSC = require('osc-js')
 const expressPort = 3000
 const httpPort = 80
 
@@ -16,9 +16,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // app.use(bodyParser.json())
 
 // OSC framework
-// const options = { send: { port: 11245 } }
-// const osc = new OSC({ plugin: new OSC.DatagramPlugin(options) })
-// const oscPort = 9005
+const options = { send: { port: 11245 } }
+const osc = new OSC({ plugin: new OSC.DatagramPlugin(options) })
+const oscPort = 9005
 
 // array of notes
 // let midiBuffer = []
@@ -53,6 +53,7 @@ io.on('connection', function(socket){
 //=====================
 // osc connection to oF
 //=====================
+// TODO: Connect server with oF app via osc
 
 // osc.on('/time', message => {
 //     // console.log(midiBuffer)
@@ -61,7 +62,7 @@ io.on('connection', function(socket){
 //     if(tempo == 1){
 //         // send currentArray[1]
 //         if(currentArray.length >= 1){
-//             osc.send(new OSC.Message('/off/ 0'), { port: oscPort })
+            // osc.send(new OSC.Message('/off/ 0'), { port: oscPort })
 //             osc.send(new OSC.Message('/data/ ' + JSON.stringify(currentArray[1])), { port: oscPort })
 //         }
 //         else{
@@ -125,4 +126,4 @@ app.listen(expressPort, function () {
 	console.log("Example app listening on port " + expressPort)
 })
 
-// osc.open({ port: 9913 }) // bind socket to localhost:9912
+osc.open({ port: 9913 }) // bind socket to localhost:9912

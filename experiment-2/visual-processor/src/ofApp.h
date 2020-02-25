@@ -20,5 +20,11 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-		
+    
+    ofVideoGrabber vidGrabber;
+    ofPixels videoInverted;
+    ofTexture videoTexture;
+    
+    int camWidth, camHeight;
+    float stepLength, ySteps;
 };
