@@ -897,6 +897,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
 					src,
+					src,
 					../../../../of_v0.10.1_osx_release/addons/ofxGui/src,
 					../../../../of_v0.10.1_osx_release/addons/ofxOsc/libs,
 					../../../../of_v0.10.1_osx_release/addons/ofxOsc/libs/oscpack,
@@ -929,6 +930,7 @@
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "APPSTORE=1";
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
+					src,
 					src,
 					../../../../of_v0.10.1_osx_release/addons/ofxGui/src,
 					../../../../of_v0.10.1_osx_release/addons/ofxOsc/libs,
@@ -978,6 +980,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
 					src,
+					src,
 					../../../../of_v0.10.1_osx_release/addons/ofxGui/src,
 					../../../../of_v0.10.1_osx_release/addons/ofxOsc/libs,
 					../../../../of_v0.10.1_osx_release/addons/ofxOsc/libs/oscpack,
@@ -1021,6 +1024,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
 					src,
+					src,
 					../../../../of_v0.10.1_osx_release/addons/ofxGui/src,
 					../../../../of_v0.10.1_osx_release/addons/ofxOsc/libs,
 					../../../../of_v0.10.1_osx_release/addons/ofxOsc/libs/oscpack,
@@ -1053,6 +1057,7 @@
 				GCC_MODEL_TUNING = NONE;
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
+					src,
 					src,
 					../../../../of_v0.10.1_osx_release/addons/ofxGui/src,
 					../../../../of_v0.10.1_osx_release/addons/ofxOsc/libs,
@@ -1091,6 +1096,7 @@
 				GCC_MODEL_TUNING = NONE;
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
+					src,
 					src,
 					../../../../of_v0.10.1_osx_release/addons/ofxGui/src,
 					../../../../of_v0.10.1_osx_release/addons/ofxOsc/libs,

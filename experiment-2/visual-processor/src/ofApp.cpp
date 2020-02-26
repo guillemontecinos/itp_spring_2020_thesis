@@ -5,7 +5,7 @@ void ofApp::setup(){
     camWidth = 640;
     camHeight = 480;
     ySteps = 0;
-    stepLength = .5;
+//    stepLength = .5;
     
     // ask the video grabber for a list of attached camera devices.
     // put it into a vector of devices
@@ -30,23 +30,67 @@ void ofApp::setup(){
     videoInverted.allocate(camWidth,camHeight, OF_PIXELS_RGB);
     videoTexture.allocate(videoInverted);
     ofSetVerticalSync(true);
-    
+//
     ofBackground(100, 100, 100); // set the background colour to dark grey
+    
+    // OSC listen on the given port
+    ofLog() << "listening for osc messages on port " << PORT;
+    receiver.setup(PORT);
+    receiver.start();
+    
+    accumSpeed.push_back(0.0);
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    vidGrabber.update();
-    stepLength = ofMap(mouseY, 0, ofGetHeight(), 1, .5);
-    ofPixels & pixels = vidGrabber.getPixels();
+    // OSC Stuff
+    // hide old messages
+    for(int i = 0; i < NUM_MSG_STRINGS; i++){
+        if(timers[i] < ofGetElapsedTimef()){
+            msgStrings[i] = "";
+        }
+    }
+
+    // check for waiting messages
+    while(receiver.hasWaitingMessages()){
+
+        // get the next message
+        ofxOscMessage m;
+        receiver.getNextMessage(m);
+
+        // message received event
+        if(m.getAddress() == "/swipetime"){
+            lastTimeStamp = m.getArgAsInt(0);
+            timeStamps.push_back(lastTimeStamp);
+            
+            // Input Data processing
+            if(timeStamps.size() > 1){
+                int index = timeStamps.size() - 1;
+                int delta = timeStamps[index] - timeStamps[index - 1];
+                float speed = 5 / float(delta);  //scaled by 5
+                deltaTimes.push_back(delta);
+                speeds.push_back(speed);
+                accumSpeed.push_back(accumSpeed[accumSpeed.size() - 1] + speed);
+                cout << accumSpeed[accumSpeed.size() - 1] << endl;
+            }
+        }
+    }
     
+    
+    
+    // Video Stuff
+    vidGrabber.update();
+//    stepLength = ofMap(mouseY, 0, ofGetHeight(), 1, .5);
+    stepLength = accumSpeed[accumSpeed.size() - 1];
+    ofPixels & pixels = vidGrabber.getPixels();
+
     for (int x=0; x<camHeight; x++ ) { // loop through all the pixels on a line
         ofColor color = pixels.getColor(x, ySteps); // get the pixels on line ySteps
         videoInverted.setColor(x, ySteps, color);
     }
-    
+
     videoTexture.loadData(videoInverted);
-    
+
     if ( ySteps >= camHeight ) {
         ySteps = 0; // if we are on the bottom line of the image then start at the top again
     }

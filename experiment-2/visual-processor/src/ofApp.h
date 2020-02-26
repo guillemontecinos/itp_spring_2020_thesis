@@ -1,6 +1,13 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofxOsc.h"
+
+// listening port
+#define PORT 12345
+
+// max number of strings to display
+#define NUM_MSG_STRINGS 10
 
 class ofApp : public ofBaseApp{
 
@@ -20,11 +27,25 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+        
+        // Video grabber components
+        ofVideoGrabber vidGrabber;
+        ofPixels videoInverted;
+        ofTexture videoTexture;
     
-    ofVideoGrabber vidGrabber;
-    ofPixels videoInverted;
-    ofTexture videoTexture;
+        // OSC
+        ofxOscReceiver receiver;
+        int currentMsgString;
+        string msgStrings[NUM_MSG_STRINGS];
+        float timers[NUM_MSG_STRINGS];
     
-    int camWidth, camHeight;
-    float stepLength, ySteps;
+        // Input data processing
+        int lastTimeStamp;
+        vector<int> timeStamps;
+        vector<int> deltaTimes;
+        vector<float> speeds;
+        vector<float> accumSpeed;
+        
+        int camWidth, camHeight;
+        float stepLength, ySteps;
 };

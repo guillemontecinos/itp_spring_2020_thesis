@@ -15,9 +15,10 @@ const httpPort = 80
 server.listen(httpPort)
 
 // OSC framework
-const options = { send: { port: 11245 } }
+const options = { send: { port: 12345 } }
 const osc = new OSC({ plugin: new OSC.DatagramPlugin(options) })
-const oscPort = 9005
+// const oscPort = 9005
+// const oscPort = 12345
 
 //=============
 // get and post
@@ -31,7 +32,8 @@ app.get("/", function (req, res) {
 //=====================
 // Source: https://github.com/adzialocha/osc-js/wiki/Node.js-Server
 osc.on('open', function(){
-	osc.send(new OSC.Message('/hello/'), { port: oscPort })
+	// osc.send(new OSC.Message('/hello'), { host: 'localhost', port: oscPort })
+	osc.send(new OSC.Message('/hello'), { host: 'localhost'})
 })
 
 //=============================
@@ -44,7 +46,10 @@ io.on('connection', function(socket){
 	socket.on('speed event', function(data){
 		console.log(data.my)
 		console.log('Elapsed time: ' + data.time + ' ms')
-		osc.send(new OSC.Message('/data/' + data.time), { port: oscPort })
+		let message = new OSC.Message(['swipetime'], data.time)
+		// let message = new OSC.Message(['mouse', 'position'], Math.random(), Math.random())
+		// osc.send(bundle)
+		osc.send(message, {host: 'localhost'})
 	})
 })
 
