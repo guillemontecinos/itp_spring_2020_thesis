@@ -28,8 +28,7 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
         
-        // Video grabber components
-        ofVideoGrabber vidGrabber;
+        ofVideoPlayer videoPlayer;
         ofPixels videoInverted;
         ofTexture videoTexture;
     
@@ -39,13 +38,14 @@ class ofApp : public ofBaseApp{
         string msgStrings[NUM_MSG_STRINGS];
         float timers[NUM_MSG_STRINGS];
     
-        // Input data processing
+        // System control variables
+        float lastSwipeTime, lastLoopTime, rampSpeed, stepLength, ySteps;
         int lastTimeStamp;
+        bool isSwiping;
         vector<int> timeStamps;
         vector<int> deltaTimes;
         vector<float> speeds;
         vector<float> accumSpeed;
         
         int camWidth, camHeight;
-        float stepLength, ySteps;
 };

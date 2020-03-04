@@ -2,58 +2,54 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    camWidth = 640;
-    camHeight = 480;
+    camWidth = 1280;
+    camHeight = 720;
     ySteps = 0;
-//    stepLength = .5;
+    stepLength = 1;
+
+    videoPlayer.load("ny-walk.mp4");
+    videoPlayer.play();
     
-    // ask the video grabber for a list of attached camera devices.
-    // put it into a vector of devices
-    vector<ofVideoDevice> devices = vidGrabber.listDevices();
-    
-    // loop through and print out the devices to the console log
-    for(int i = 0; i < devices.size(); i++){
-        if(devices[i].bAvailable){
-            ofLogNotice() << devices[i].id << ": " << devices[i].deviceName;
-        }else{
-            ofLogNotice() << devices[i].id << ": " << devices[i].deviceName << " - unavailable ";
-        }
-    }
-    
-    // set the ID of the camera we will use
-    vidGrabber.setDeviceID(0);
-    // set how fast we will grab frames from the camera
-    vidGrabber.setDesiredFrameRate(30);
-    // set the width and height of the camera
-    vidGrabber.initGrabber(camWidth, camHeight);
     // set up our pixel object to be the same size as our camera object
     videoInverted.allocate(camWidth,camHeight, OF_PIXELS_RGB);
     videoTexture.allocate(videoInverted);
     ofSetVerticalSync(true);
-//
-    ofBackground(100, 100, 100); // set the background colour to dark grey
+
+//    ofBackground(100, 100, 100); // set the background colour to dark grey
     
     // OSC listen on the given port
     ofLog() << "listening for osc messages on port " << PORT;
     receiver.setup(PORT);
     receiver.start();
     
+    // System control variables
+    isSwiping = false;
     accumSpeed.push_back(0.0);
+    lastSwipeTime = 0.0;
+    lastLoopTime = 0.0;
+    rampSpeed = 100.0;
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    // OSC Stuff
+    // evaluate if is swiping
+    if(ofGetElapsedTimef() - lastSwipeTime >= 1.0){
+        isSwiping = false;
+    }
+    else{
+        isSwiping = true;
+    }
+    cout << "isSwiping: " << isSwiping << endl;
+    
+// ================== OSC ==================
     // hide old messages
     for(int i = 0; i < NUM_MSG_STRINGS; i++){
         if(timers[i] < ofGetElapsedTimef()){
             msgStrings[i] = "";
         }
     }
-
     // check for waiting messages
     while(receiver.hasWaitingMessages()){
-
         // get the next message
         ofxOscMessage m;
         receiver.getNextMessage(m);
@@ -64,27 +60,52 @@ void ofApp::update(){
             timeStamps.push_back(lastTimeStamp);
             
             // Input Data processing
-            if(timeStamps.size() > 1){
+            if(timeStamps.size() > 1 && isSwiping){ //TODO: Check this statement
                 int index = timeStamps.size() - 1;
                 int delta = timeStamps[index] - timeStamps[index - 1];
-                float speed = 5 / float(delta);  //scaled by 5
+                float speed = 30 / float(delta);  //scaled by 5
                 deltaTimes.push_back(delta);
                 speeds.push_back(speed);
                 accumSpeed.push_back(accumSpeed[accumSpeed.size() - 1] + speed);
-                cout << accumSpeed[accumSpeed.size() - 1] << endl;
+                cout << "accumSpeed: " << accumSpeed[accumSpeed.size() - 1] << endl;
             }
         }
+        // update lastSwipeTime
+        lastSwipeTime = ofGetElapsedTimef();
     }
-    
-    
-    
-    // Video Stuff
-    vidGrabber.update();
-//    stepLength = ofMap(mouseY, 0, ofGetHeight(), 1, .5);
-    stepLength = accumSpeed[accumSpeed.size() - 1];
-    ofPixels & pixels = vidGrabber.getPixels();
+// ================== OSC ==================
+// ============= System Control =============
+//    TODO: check again the logic because is calculating negative values
+    if(isSwiping){
+        stepLength = 1.0 - accumSpeed[accumSpeed.size() - 1];
+        if(stepLength < 0){
+            stepLength = 0;
+        }
+//        else{ }
+    }
+    else{
+        if (accumSpeed.size() > 1) {
+            accumSpeed.clear();
+            accumSpeed.push_back(0.0);
+        }
+        if(stepLength >= 1){
+            stepLength = 1;
+        }
+        else if(stepLength < 0){
+            stepLength = 0;
+        }
+        else{
+            // ramp to 1
+            stepLength += .005;
+        }
+    }
+    cout << "stepLength: " << stepLength << endl;
+// ============= System Control =============
+// ============ Video Processing ============
+    videoPlayer.update();
+    ofPixels & pixels = videoPlayer.getPixels();
 
-    for (int x=0; x<camHeight; x++ ) { // loop through all the pixels on a line
+    for (int x=0; x<camWidth; x++ ) { // loop through all the pixels on a line
         ofColor color = pixels.getColor(x, ySteps); // get the pixels on line ySteps
         videoInverted.setColor(x, ySteps, color);
     }
@@ -95,12 +116,14 @@ void ofApp::update(){
         ySteps = 0; // if we are on the bottom line of the image then start at the top again
     }
     ySteps += stepLength; // step on to the next line. increase this number to make things faster
+// ============ Video Processing ============
+    lastLoopTime = ofGetElapsedTimef();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    vidGrabber.draw(0, 0); // draw our plain image
-    videoTexture.draw( camWidth, 0, camWidth, camHeight); // draw the video texture we have constructed
+//    videoPlayer.draw(0, 0);
+    videoTexture.draw( 0, 0, camWidth, camHeight); // draw the video texture we have constructed
 }
 
 //--------------------------------------------------------------

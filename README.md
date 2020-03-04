@@ -275,12 +275,17 @@ The first of the experiments I will carry out implies the design of a system tha
 
 The second experiment will imply the manipulation of cartographic data that will be used to retrieve 2D and 3D graphics from Google Maps and use them to speculatively represent the mental space of a person, in Unity. This prototype requires the use of JS, GIZ and C#. The knowledge related to cartography, maps and mapping will be acquired in the class All Maps Lie, during the second half of the semester.
 
-## Experiment 2 - Week 4
+## Experiment 2 - Week 5
 My second experiment (after decided to keep the first one in hold) started with the following prompt:
 > My thesis simulates scrolling down through a/an aesthetic video art. Components: mobile phone & projector
 
 The first question that popped up into my mind was: how to represent the deformation of space and time?
 explain and show some referents.
+
+
+My second experiment consists in an installation that speaks about how reality blurs when experienced through an specific medium. In my personal case, Instagram has played a key role in the experience of Chile's social uprising because –for good or for bad– it's the only social media I still use. Through Instagram I have followed every Friday's protest since October 18th, I have witnessed police brutality and have acknowleged how the city has changed. 
+
+
 
 <p align="center">
   <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/assets/experiment-2-diagram.jpeg" align="middle" width="80%">
@@ -293,17 +298,3 @@ I wanted ro set an infinite scroll that added nth-child `<div>` elements when th
 At the same time I pursued to measure the scroll speed by setting an event listener attaced to the DOM element `document.body`. This solution didn't work properly becasue, as the document moved up, the touch event traveled on the screen with the event, so the point of reference was moving with the touch. As a consequence of this, the swipe gesture couldn't be measured.
 
 To solve this I decided tojust send the timestamp of every time a new `<div>` was appended to the document.
-
-
-## Interview Preparation - Week 4
-
-### Experts
-1. Sarah Rothberg
-2. Char Davies
-3. Dorothy Santos
-4. Zach Lieberman
-5. Jaron Lanier
-6. Joey Lee
-7. Taeyoon Choi
-8. Arielle Hein
-9. Patricion González Vivols
