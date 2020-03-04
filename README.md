@@ -289,7 +289,7 @@ The Instagram feed opens the window to the user to explore what is currently hap
 
 
 ### First Prototype
-### Scroll sketch
+#### Scroll sketch
 The goal of this section is to create a feed as similar to Instagram as possible that sends over Web Sockets the time stamp of every swipe event. The swipe event is triggered when the web document reaches the bottom of the screen and it appends a new `<div>` at the end. 
 
 In this section I pursued to measure the scroll speed by setting an event listener attaced to the DOM element `document.body`. This solution didn't work properly becasue, as the document moved up, the touch event traveled on the screen with the event, so the point of reference was moving with the touch. As a consequence of this, the swipe gesture couldn't be measured.
@@ -315,3 +315,33 @@ The next iteration of this part of the project will be a web-based image gallery
     })
 </script>
 ```
+
+#### Server side
+An express server loads the scroll script in the mobile and stablishes a Web Socket. Every time the scroll event is triggered, the time stamp is sent to the server, which forwards it to the openFrameworks app via OSC.
+
+```js
+//=====================
+// osc connection to oF
+//=====================
+// Source: https://github.com/adzialocha/osc-js/wiki/Node.js-Server
+osc.on('open', function(){
+	osc.send(new OSC.Message('/hello'), { host: 'localhost'})
+})
+
+//=============================
+// Sockets connection to client
+//=============================
+// Source: https://socket.io/docs/#Using-with-Express
+io.on('connection', function(socket){
+	console.log('Device Connected')
+	socket.emit('connection answer', {hello: 'world'})
+	socket.on('speed event', function(data){
+		console.log(data.my)
+		console.log('Elapsed time: ' + data.time + ' ms')
+		let message = new OSC.Message(['swipetime'], data.time)
+		osc.send(message, {host: 'localhost'})
+	})
+})
+```
+
+#### openFrameworks side
