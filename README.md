@@ -346,3 +346,9 @@ io.on('connection', function(socket){
 
 #### openFrameworks side
 An OSC receiver object listens to the messages coming from the server. Every time stamp is stored in an array and used to calculate the delta time between the last and current swipe event, and its speed. The accumulated speed is used to control the state of deformation of the envirnoment. A video texture is passed to a shader that deforms it over time.
+
+#### Result
+
+<p align="center">
+  <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/assets/experiment-2-demo.gif" align="middle" width="80%">
+</p>
