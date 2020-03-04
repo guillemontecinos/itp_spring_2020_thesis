@@ -287,10 +287,31 @@ The Instagram feed opens the window to the user to explore what is currently hap
   <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/assets/experiment-2-diagram.png" align="middle" width="80%">
 </p>
 
-process of infinite scroll
 
-I wanted ro set an infinite scroll that added nth-child `<div>` elements when the scrolling bar reached the end of the screen. 
+### First Prototype
+### Scroll sketch
+The goal of this section is to create a feed as similar to Instagram as possible that sends over Web Sockets the time stamp of every swipe event. The swipe event is triggered when the web document reaches the bottom of the screen and it appends a new `<div>` at the end. 
 
-At the same time I pursued to measure the scroll speed by setting an event listener attaced to the DOM element `document.body`. This solution didn't work properly becasue, as the document moved up, the touch event traveled on the screen with the event, so the point of reference was moving with the touch. As a consequence of this, the swipe gesture couldn't be measured.
+In this section I pursued to measure the scroll speed by setting an event listener attaced to the DOM element `document.body`. This solution didn't work properly becasue, as the document moved up, the touch event traveled on the screen with the event, so the point of reference was moving with the touch. As a consequence of this, the swipe gesture couldn't be measured.
 
-To solve this I decided tojust send the timestamp of every time a new `<div>` was appended to the document.
+The next iteration of this part of the project will be a web-based image gallery feed with real time content scraped from instagram, or a transparent app that can be displayed in front of Instagram and measures the touch events in the screen.
+
+```js
+<script type="text/javascript">
+    // Source: https://socket.io/docs/#Using-with-Express
+    let socket = io.connect('http://0.0.0.0')
+    socket.on('connection answer', function(data){
+        console.log(data)
+    })
+    // This script creates the infinite scroll by adding the new empty divs
+    // Source: https://www.youtube.com/watch?v=8nFffpYieBI
+    $(window).scroll(function(){
+        if ($(window).scrollTop() >= $(document).height() - $(window).height() - 50) {
+            $('.infinite').append('<div></div>')
+            // Sends each swipe's timestamp to the server
+            let currentTime = new Date().getTime()
+            socket.emit('speed event', {my: 'swiped', time: currentTime})
+        }
+    })
+</script>
+```
