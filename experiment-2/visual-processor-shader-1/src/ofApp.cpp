@@ -113,7 +113,7 @@ void ofApp::draw(){
     
     shader.begin();
     
-//    stepLength = ofClamp(percentX, 0, 1);
+    stepLength = ofClamp(percentX, 0, 1);
     shader.setUniform1f("time", ofGetElapsedTimef() + ofNoise(ofGetElapsedTimef()));
     shader.setUniform1f("percent", stepLength);
     
