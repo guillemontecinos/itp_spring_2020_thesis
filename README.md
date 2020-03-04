@@ -278,7 +278,9 @@ The second experiment will imply the manipulation of cartographic data that will
 ## Experiment 2 - Week 5
 My second experiment consists in an installation that speaks about getting lost in social media by exploring the gesture of scrolling down as a mind state in which reality blurs around the subject, while consuming a reality curated by a third party. The concept of this piece starts from my personal experience of witnessing Chile's social uprising through Instagram's mediation. This medium has broadcasted to me every Friday's protest since October 18th, police brutality and the current stat of the city after four months of protests. The installation talks about the sensation of getting lost in time and space when experiencing other reality in social media, using the scroll down gesture as a metaphor of loosing awareness of one's soroundings but also as an interactive interface.
 
-The installation
+The installation consists in an iPhone in the middle of a room, with an Instagram feed about Chile's social uprising open. At each side of the room there are two video projections of a space in Santiago: one is a first person video of a protest in one location of the city, and the other recreates the same spatial trajectory of the first one, in the same place but filmed inside Google Street View. *Reality* and its representation are presented in opposition in a way that the visitor can never experience both at the same time, because they have to choose what to see: The *reality*, it's representation or the mediation of it in social media.
+
+The Instagram feed opens the window to the user to explore what is currently happening in Chile by displaying the last posts with certain hashtags related to the social uprising. The visitor is invited to explore the content in that feed by scroling down. The gesture of scrolling will trigger the distortion of the visual content displayed in the room as well as a sound landscape built with the video sound.
 
 
 <p align="center">
