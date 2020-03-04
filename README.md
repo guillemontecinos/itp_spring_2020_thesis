@@ -282,7 +282,7 @@ The installation
 
 
 <p align="center">
-  <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/assets/experiment-2-diagram.jpeg" align="middle" width="80%">
+  <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/assets/experiment-2-diagram.png" align="middle" width="80%">
 </p>
 
 process of infinite scroll
