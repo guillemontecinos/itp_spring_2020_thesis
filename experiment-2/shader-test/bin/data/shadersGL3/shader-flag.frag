@@ -1,0 +1,27 @@
+#version 150
+in vec4 gl_FragCoord;
+
+out vec4 outputColor;
+
+uniform sampler2DRect tex0;
+uniform float u_time;
+uniform float percent;
+uniform vec2 u_resolution;
+ 
+void main()
+{   
+    vec2 uv = gl_FragCoord.xy / u_resolution;
+	float y = 
+		percent * (0.7*sin((uv.y + u_time) * 4.0) * 0.038 +
+		0.3*sin((uv.y + u_time) * 8.0) * 0.010 +
+		0.05*sin((uv.y + u_time) * 40.0) * 0.05);
+
+	float x = 
+		percent * (0.5*sin((uv.y + u_time) * 5.0) * 0.1 +
+		0.2*sin((uv.x + u_time) * 10.0) * 0.05 +
+		0.2*sin((uv.x + u_time) * 30.0) * 0.02);
+
+	
+
+    outputColor = texture(tex0, u_resolution * 0.79*(uv + vec2(y+0.11, x+0.11)));
+}

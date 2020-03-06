@@ -2,15 +2,16 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    #ifdef TARGET_OPENGLES
-        shader.load("shadersES2/shader");
-    #else
-        if(ofIsGLProgrammableRenderer()){
-            shader.load("shadersGL3/shader");
-        }else{
-            shader.load("shadersGL2/shader");
-        }
-    #endif
+//    #ifdef TARGET_OPENGLES
+//        shader.load("shadersES2/shader");
+//    #else
+//        if(ofIsGLProgrammableRenderer()){
+//            shader.load("shadersGL3/shader");
+//        }else{
+//            shader.load("shadersGL2/shader");
+//        }
+//    #endif
+    shader.load("shadersGL3/shader-flag.vert", "shadersGL3/shader-flag.frag");
     
 //    img.load("dignidad.jpg");
 //    video.load("ny-walk.mp4");
@@ -25,9 +26,10 @@ void ofApp::setup(){
 //    plane.set(img.getWidth(), img.getHeight(), planeColumns, planeRows);
 //    plane.mapTexCoords(0, img.getHeight(), img.getWidth(), 0); //img.getHeight() is called in y-init because otherwise the texture gets rendered inverted
     plane.set(video.getWidth(), video.getHeight(), planeColumns, planeRows);
-    plane.mapTexCoords(0, video.getHeight(), video.getWidth(), 0); //img.getHeight() is called in y-init because otherwise the texture gets rendered inverted
+    plane.mapTexCoords(0, 0, video.getWidth(), video.getHeight()); //img.getHeight() is called in y-init because otherwise the texture gets rendered inverted
     
     video.play();
+    video.setVolume(0.0);
              
 }
 
@@ -46,7 +48,8 @@ void ofApp::draw(){
     
     shader.begin();
     
-    shader.setUniform1f("time", ofGetElapsedTimef());
+    shader.setUniform1f("u_time", ofGetElapsedTimef());
+    shader.setUniform2f("u_resolution", video.getWidth(), video.getHeight());
     shader.setUniform1f("percent", percentX);
     
     float tx = ofGetWidth() / 2;

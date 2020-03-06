@@ -15,11 +15,13 @@ void main()
     // the sine wave travels along the x-axis (across the screen),
     // so we use the x coordinate of each vertex for the calculation,
     // but we displace all the vertex along the y axis (up the screen)/
-    float displacement = 50.0 * percent;
+    float displacement = 100.0 * percent;
 //    float displacementY = sin(time + (position.x / 100.0)) * displacementHeight;
     
-    float displacementY = sin(time + (position.x / 100.0)) * displacement;
-    float displacementX = sin(time + (position.y / 100.0)) * displacement;
+    // float displacementY = sin(time + (position.x / 50.0)) * displacement * sin(position.y * 3.14159);
+    // float displacementX = sin(time + (position.y / 50.0)) * displacement * sin(position.x * 3.14159);
+    float displacementY = sin(time + (position.x / 50.0)) * displacement;
+    float displacementX = sin(time + (position.y / 50.0)) * displacement;
 	
     vec4 modifiedPosition = modelViewProjectionMatrix * position;
 	modifiedPosition.y += displacementY;
