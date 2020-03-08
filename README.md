@@ -357,4 +357,4 @@ An OSC receiver object listens to the messages coming from the server. Every tim
   <img src="https://github.com/guillemontecinos/itp_spring_2020_thesis/blob/master/assets/experiment-2-demo-2.gif" align="middle" width="80%">
 </p>
 
-Click to see [video](https://vimeo.com/395226872).
+**Click to see [video](https://vimeo.com/395226872)**.
