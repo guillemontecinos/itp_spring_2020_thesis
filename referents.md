@@ -1,4 +1,6 @@
-# List of Thesis referent pieces
+# Misc Referents
+
+## List of Thesis referent pieces
 
 * [The Deep Listener](https://experiments.withgoogle.com/augmentedarchitecture)
 * [Relative realities. An enhancement of reality](http://archive.aec.at/prix/showmode/15272/)
@@ -7,6 +9,25 @@
 * [Coïguitum - Roberto Matta (1972)](https://1.bp.blogspot.com/-pwrhMhA6AqM/Tsp5Ah0lpHI/AAAAAAAAECw/KLg0Zjyc9sQ/s1600/coigitum.jpg)
 * [Making a Time machine - Daniel Buzzo](https://buzzo.com/making-a-time-machine/)
 * [Pointcloud city - Patricio González Vivo](http://patriciogonzalezvivo.com/2014/pointcloudcity/)
+
+## Visual referents for deformation
+<p align="center">
+  <img src="http://i1.wp.com/bitcast-a-sm.bitgravity.com/slashfilm/wp/wp-content/images/interstellar-tesseract.jpg" align="middle" width="80%">
+</p>
+
+<p align="center">
+    <a href="https://worldbuilding.stackexchange.com/questions/67766/how-can-we-fill-up-a-4d-space-with-3d-matter">
+        <img src="https://4.bp.blogspot.com/-fepfIMAqTYQ/Ti2uq5wnSII/AAAAAAAAAE4/BOQ1zhE9Ees/s1600/a5%2527.jpg" align="middle" width="80%">
+    </a>
+</p>
+
+<p align="center">
+  <img src="https://3.bp.blogspot.com/-O9aoZMsb02A/UOD-D-0PDgI/AAAAAAAAOA0/a-uvr8S6jEc/s1600/wormhole.jpg" align="middle" width="80%">
+</p>
+
+<p align="center">
+  <img src="https://www.allmystery.de/i/t9YxqKV_relrot_640x480.gif" align="middle" width="80%">
+</p>
 
 ## Shaders
 * https://www.shadertoy.com/view/Msf3D2
