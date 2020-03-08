@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-    <a href="https://worldbuilding.stackexchange.com/questions/67766/how-can-we-fill-up-a-4d-space-with-3d-matter">
+    <a href="https://livinginthe4darch-alamin.blogspot.com/2011/07/thesis-intent.html">
         <img src="https://4.bp.blogspot.com/-fepfIMAqTYQ/Ti2uq5wnSII/AAAAAAAAAE4/BOQ1zhE9Ees/s1600/a5%2527.jpg" align="middle" width="80%">
     </a>
 </p>
