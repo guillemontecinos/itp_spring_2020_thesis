@@ -23,3 +23,12 @@ Referents shown in class by Gabe
 * [CW&T - 3.16 Billion Cycles Clock](https://cwandt.com/products/3-16-billion-cycles)
 * [The Long Foundation - 10,000 Year Clock](http://longnow.org/)
 * Chris Burton's installation at LACMA
+
+## Midterm feedback
+* disorient is an interesting concept, I don't know what's gonna happen then I'm also disoriented.
+* close captions
+* swiping can reveal information, it can start as a dark room
+* recreate my memories to other people, they can walk around Chile and see how I remember 
+* videos can start noisy and force them to make them clearer by interacting with the piece.
+* Gestures like double tap (like) can take photos and keep them somewhere in the installation
+* explore gestures from surfing instagram

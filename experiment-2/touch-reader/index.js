@@ -5,6 +5,7 @@ const bodyParser = require('body-parser')
 const server = require('http').Server(app)
 const io = require('socket.io')(server)
 const OSC = require('osc-js')
+const fileSaver = require('file-saver')
 
 const expressPort = 3000
 
@@ -36,6 +37,16 @@ osc.on('open', function(){
 	osc.send(new OSC.Message('/hello'), { host: 'localhost'})
 })
 
+// osc.on('screenshot', message => {
+// osc.on('example/2/blob', message => {
+// 	console.log("message received")
+// 	let arrayBufferView = new Uint8Array(message.args)
+// 	let blob = new Blob([arrayBufferView], {type: "image/png"})
+// 	fileSaver.saveAs(blob, 'image.png')
+// 	console.log("Image saved as image.png")
+// 	console.log(arrayBufferView)
+// })
+
 //=============================
 // Sockets connection to client
 //=============================
@@ -46,9 +57,7 @@ io.on('connection', function(socket){
 	socket.on('speed event', function(data){
 		console.log(data.my)
 		console.log('Elapsed time: ' + data.time + ' ms')
-		let message = new OSC.Message(['swipetime'], data.time)
-		// let message = new OSC.Message(['mouse', 'position'], Math.random(), Math.random())
-		// osc.send(bundle)
+		let message = new OSC.Message(['swipetime'], data.time.toString())
 		osc.send(message, {host: 'localhost'})
 	})
 })
@@ -57,4 +66,4 @@ app.listen(expressPort, function () {
 	console.log("Example app listening on port " + expressPort)
 })
 
-osc.open({ port: 9913 }) // bind socket to localhost:9912
+osc.open({ port: 9000 }) // bind socket to localhost:9912
