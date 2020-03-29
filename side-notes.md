@@ -41,3 +41,11 @@
 * [Swift 3 & Firebase 4 & 3 - How to Build Smooth Instagram Navigation - Ep 6 (Build Instagram)](https://www.youtube.com/watch?v=c4IHTefzNNY)
 * [How to Build Instagram Newsfeed - UITableView and UICollectionView Tutorial](https://www.youtube.com/watch?v=gHzBMo32Dyk)
 * [Building Your First iOS 13 App - LinkedIn Learning](https://www.linkedin.com/learning/building-your-first-ios-13-app/connect-ui-elements-to-code?u=2131553)
+
+## Web Scroll
+* [jazz.computer](http://jazz.computer/)
+* [Rule of three](https://rule-of-three.co.uk/)
+* [Bagigia](https://www.bagigia.com/)
+* [The boat](https://www.sbs.com.au/theboat/)
+* [The museum of Mario](http://mario.ign.com/)
+* [One to see onte to kill](http://www.framescollection.com/tunnelrats.html)
