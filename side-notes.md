@@ -49,3 +49,8 @@
 * [The boat](https://www.sbs.com.au/theboat/)
 * [The museum of Mario](http://mario.ign.com/)
 * [One to see onte to kill](http://www.framescollection.com/tunnelrats.html)
+
+## Notes from Gabe after spring break
+* [Tatzu Nishi](http://www.tatzunishi.net/head2.html): Builds monumental living rooms around actual monuments.
+* [Grand Old Party](https://mepler.com/Grand-Old-Party): Sculptures created with data from the 2016 elections.
+* [Future Perfect](https://www.youtube.com/watch?v=nw4hAY2jq2A): Installation that works with layers of reality
