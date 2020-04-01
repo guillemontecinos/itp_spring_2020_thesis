@@ -32,3 +32,23 @@ Referents shown in class by Gabe
 * videos can start noisy and force them to make them clearer by interacting with the piece.
 * Gestures like double tap (like) can take photos and keep them somewhere in the installation
 * explore gestures from surfing instagram
+
+## Class March 31st
+* Kinds of User testing
+    * Moderated user testing
+        * present a story or scenario
+        * Give useful instructions
+        * ask questions
+    * Remote moderated
+    * Remote unmoderated
+* UX/Usability
+* Reverse critique
+    1. look 
+    2. describe 
+    3. think
+    4. connect
+    5. judge
+* How reverse critic of my project would look like?
+* Test with 5 people
+* write 10 questions you could anticipate about your thesis design
+* Analyze results and do it again
