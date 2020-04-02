@@ -14,8 +14,9 @@ let jDat
 // fromDate.setDate(4)
 // fromDate.setHours(0,0,0,0)
 
-let path = "./thesis-scrapes/feed-content/feed-content.json"
+let path = "/feed-content/feed-content.json"
 // let path = "./thesis-scrapes/radiovillafrancia/radiovillafrancia.json"
+// let path = '/datafetch'
 
 
 fetch(path)
@@ -117,30 +118,3 @@ function appendDivElement(jsonObject){
 
     $('.container').append(card)
 }
-
-
-// function appendDivElement(jsonObject)
-    // {
-    //     if(jsonObject.__typename == "GraphVideo") return
-    //     let div = document.createElement('div')
-    //     let image = document.createElement('img')
-    //     let date = document.createElement('p')
-    //     let text = document.createElement('p')
-    //     // image.src = jsonObject.thumbnail_resources[jsonObject.thumbnail_resources.length - 1].src
-    //     image.src = jsonObject.display_url
-    //     image.style.width = '100%'
-    //     let timeStamp = new Date(Number(jsonObject.taken_at_timestamp) * 1000)
-    //     date.innerText = timeStamp.toDateString()
-    //     if(jsonObject.edge_media_to_caption.edges.length > 0){
-    //         text.innerText = jsonObject.edge_media_to_caption.edges[0].node.text
-    //     }
-    //     else
-    //     {
-    //         text.innerText = ""
-    //     }
-        
-    //     div.appendChild(date)
-    //     div.appendChild(image)
-    //     div.appendChild(text)
-    //     $('.infinite').append(div)
-    // }
