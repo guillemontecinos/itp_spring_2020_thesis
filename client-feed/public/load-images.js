@@ -15,9 +15,6 @@ let jDat
 // fromDate.setHours(0,0,0,0)
 
 let path = "/feed-content/feed-content.json"
-// let path = "./thesis-scrapes/radiovillafrancia/radiovillafrancia.json"
-// let path = '/datafetch'
-
 
 fetch(path)
   .then(response => response.json())
@@ -39,7 +36,7 @@ fetch(path)
                     {
                         appendDivElement(jDat.GraphImages[j + i])
                     }
-                    i += 5
+                    i += 2
                     // TODO: See how to read touch events out of here so we have the actual direciton and speed of the gesture
                     // Sends each swipe's timestamp to the server
                     // let currentTime = new Date().getTime()
@@ -61,7 +58,7 @@ function appendDivElement(jsonObject){
     profileInfo.className = "profile-info"
     let name = document.createElement('div')
     name.className = "name"
-    name.innerText = "username"
+    name.innerText = jsonObject.username
     let locationDiv = document.createElement('div')
     locationDiv.className = "location"
     locationDiv.innerText = "New York, New York"
@@ -81,7 +78,7 @@ function appendDivElement(jsonObject){
     // p.innerText = " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     let username = document.createElement('span')
     username.className = "name"
-    username.innerText = "username"
+    username.innerText = jsonObject.username
     let descriptionText = document.createElement('span')
     descriptionText.className = "description-text"
     if(jsonObject.edge_media_to_caption.edges.length > 0){
