@@ -32,11 +32,12 @@ fetch(path)
                 if ($(window).scrollTop() >= $(document).height() - $(window).height() - 50) {
                     // TODO: Improve Instagram look
                     // TODO: fetch data on every scroll, so I can send data that has been created on realtime
-                    for(let j = 0; j < 2; j++)
+                    for(let j = 0; j < 5; j++)
                     {
+                        if(j + i >= datLen) i = 0
                         appendDivElement(jDat.GraphImages[j + i])
                     }
-                    i += 2
+                    i += 5                    
                     // TODO: See how to read touch events out of here so we have the actual direciton and speed of the gesture
                     // Sends each swipe's timestamp to the server
                     // let currentTime = new Date().getTime()

@@ -37,6 +37,15 @@ osc.on('open', function(){
 	osc.send(new OSC.Message('/hello'), { host: 'localhost'})
 })
 
+osc.on('/screenshot', message => {
+	console.log(message.args)
+// 	let arrayBufferView = new Uint8Array(message.args)
+// 	let blob = new Blob([arrayBufferView], {type: "image/png"})
+// 	fileSaver.saveAs(blob, 'image.png')
+// 	console.log("Image saved as image.png")
+// 	console.log(arrayBufferView)
+})
+
 //=============================
 // Sockets connection to client
 //=============================
@@ -46,8 +55,8 @@ io.on('connection', function(socket){
 	socket.emit('connection answer', {hello: 'world'})
 	socket.on('speed event', function(data){
 		console.log(data.my + ' at ' + data.speed + ' px/s')
-		// let message = new OSC.Message(['swipetime'], data.time.toString())
-		// osc.send(message, {host: 'localhost'})
+		let message = new OSC.Message(['swipetime'], data.speed.toString())
+		osc.send(message, {host: 'localhost'})
 	})
 })
 
