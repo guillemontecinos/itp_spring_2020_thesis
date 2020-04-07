@@ -2,18 +2,6 @@
 
 let jDat
 
-// let toDate = new Date()
-// toDate.setYear(2020)
-// toDate.setMonth(0)
-// toDate.setDate(10)
-// toDate.setHours(23,0,0,0)
-
-// let fromDate = new Date()
-// fromDate.setYear(2019)
-// fromDate.setMonth(9)
-// fromDate.setDate(4)
-// fromDate.setHours(0,0,0,0)
-
 let path = "/feed-content/feed-content.json"
 
 fetch(path)
@@ -25,23 +13,20 @@ fetch(path)
             
             let i = 0
             for (; i < 2; i++) {
-                appendDivElement(jDat.GraphImages[i])
+                appendDivElement(jDat.GraphImages[i][1])
             }
 
             $(window).scroll(function(){
                 if ($(window).scrollTop() >= $(document).height() - $(window).height() - 50) {
                     // TODO: Improve Instagram look
                     // TODO: fetch data on every scroll, so I can send data that has been created on realtime
-                    for(let j = 0; j < 5; j++)
+                    for(let j = 0; j < 3; j++)
                     {
                         if(j + i >= datLen) i = 0
-                        appendDivElement(jDat.GraphImages[j + i])
+                        appendDivElement(jDat.GraphImages[j + i][1])
                     }
-                    i += 5                    
+                    i += 3                    
                     // TODO: See how to read touch events out of here so we have the actual direciton and speed of the gesture
-                    // Sends each swipe's timestamp to the server
-                    // let currentTime = new Date().getTime()
-                    // socket.emit('speed event', {my: 'swiped', time: currentTime})
                 }
             })
     });
