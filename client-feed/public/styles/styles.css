@@ -80,7 +80,7 @@ header {
 
 .container .card .card-header .profile-image {
   display: inline-block;
-  background: red;
+  background: #111;
   height: 95px;
   width: 95px;
   border-radius: 50%;

@@ -3,7 +3,7 @@
 
 // Source: https://socket.io/docs/#Using-with-Express
 // TODO: update this address with the current IP
-let socket = io.connect('http://192.168.1.8')
+let socket = io.connect('http://192.168.1.4')
 socket.on('connection answer', function(data){
     console.log(data)
 })

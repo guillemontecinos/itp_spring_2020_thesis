@@ -1,8 +1,14 @@
 // This script loads all images from a .json scraped from instagram
 
 let jDat
+let screenshotCount = 0
 
 let path = "/feed-content/feed-content.json"
+
+socket.on('screenshot added', function(data){
+    console.log(data)
+    screenshotCount++
+})
 
 fetch(path)
   .then(response => response.json())
@@ -20,19 +26,34 @@ fetch(path)
                 if ($(window).scrollTop() >= $(document).height() - $(window).height() - 50) {
                     // TODO: Improve Instagram look
                     // TODO: fetch data on every scroll, so I can send data that has been created on realtime
-                    for(let j = 0; j < 3; j++)
-                    {
-                        if(j + i >= datLen) i = 0
-                        appendDivElement(jDat.GraphImages[j + i][1])
+                    if(screenshotCount > 0){
+                        appendDivElement(null, true)
+                        screenshotCount--
+                        for(let j = 0; j < 2; j++)
+                        {
+                            if(j + i >= datLen) i = 0
+                            appendDivElement(jDat.GraphImages[j + i][1], false)
+                        }
+                        i += 2                    
                     }
-                    i += 3                    
+                    else{
+                        for(let j = 0; j < 3; j++)
+                        {
+                            if(j + i >= datLen) i = 0
+                            appendDivElement(jDat.GraphImages[j + i][1], false)
+                        }
+                        i += 3                    
+                    }
+                    
                     // TODO: See how to read touch events out of here so we have the actual direciton and speed of the gesture
                 }
             })
     });
 
-function appendDivElement(jsonObject){
-    if(jsonObject.__typename == "GraphVideo") return
+function appendDivElement(jsonObject, isScreenshot){
+    if(!isScreenshot){
+        if(jsonObject.__typename == "GraphVideo") return
+    }
 
     let card = document.createElement('div')
     card.className = "card"
@@ -44,16 +65,25 @@ function appendDivElement(jsonObject){
     profileInfo.className = "profile-info"
     let name = document.createElement('div')
     name.className = "name"
-    name.innerText = jsonObject.username
+    // name.innerText = jsonObject.username
+    name.innerText = "deformedrealities"
     let locationDiv = document.createElement('div')
     locationDiv.className = "location"
-    locationDiv.innerText = "New York, New York"
+    locationDiv.innerText = "Santiago, Chile"
     let time = document.createElement('div')
     time.className = "time"
     let content = document.createElement('div')
     content.className = "content"
     let contentImg = document.createElement('img')
-    contentImg.src = jsonObject.display_url
+    if(isScreenshot)
+    {
+        // get from certain path
+        contentImg.src = '/reality'
+    }
+    else
+    {
+        contentImg.src = jsonObject.display_url
+    }
     let cardFooter = document.createElement('div')
     cardFooter.className = "card-footer"
     let likes = document.createElement('div')
@@ -61,18 +91,26 @@ function appendDivElement(jsonObject){
     let description = document.createElement('div')
     description.className = "description"
     let p = document.createElement('p') 
-    // p.innerText = " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     let username = document.createElement('span')
     username.className = "name"
-    username.innerText = jsonObject.username
+    // username.innerText = jsonObject.username
+    username.innerText = "deformedrealities"
     let descriptionText = document.createElement('span')
     descriptionText.className = "description-text"
-    if(jsonObject.edge_media_to_caption.edges.length > 0){
-        descriptionText.innerText = " " + jsonObject.edge_media_to_caption.edges[0].node.text
+    if (isScreenshot) {
+        // set caption with quotes
     }
-    else
-    {
-        descriptionText.innerText = ""
+    else {
+        if(jsonObject.edge_media_to_caption.edges.length > 1){
+            descriptionText.innerText = " " + jsonObject.edge_media_to_caption.edges[1].node.text
+        }
+        else if(jsonObject.edge_media_to_caption.edges.length > 0){
+            descriptionText.innerText = " " + jsonObject.edge_media_to_caption.edges[0].node.text
+        }
+        else
+        {
+            descriptionText.innerText = ""
+        }
     }
     let comments = document.createElement('div')
     comments.className = "comments"
