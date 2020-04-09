@@ -1,13 +1,14 @@
 // This script loads all images from a .json scraped from instagram
 
 let jDat
-let screenshotCount = 0
+let screenshotCue = 0
+let screenshotDisplay = 0
 
 let path = "/feed-content/feed-content.json"
 
 socket.on('screenshot added', function(data){
     console.log(data)
-    screenshotCount++
+    screenshotCue++
 })
 
 fetch(path)
@@ -26,15 +27,15 @@ fetch(path)
                 if ($(window).scrollTop() >= $(document).height() - $(window).height() - 50) {
                     // TODO: Improve Instagram look
                     // TODO: fetch data on every scroll, so I can send data that has been created on realtime
-                    if(screenshotCount > 0){
-                        appendDivElement(null, true)
-                        screenshotCount--
+                    if(screenshotCue > 0){
                         for(let j = 0; j < 2; j++)
                         {
                             if(j + i >= datLen) i = 0
                             appendDivElement(jDat.GraphImages[j + i][1], false)
                         }
-                        i += 2                    
+                        i += 2
+                        appendDivElement(null, true)
+                        screenshotCue--
                     }
                     else{
                         for(let j = 0; j < 3; j++)
@@ -78,7 +79,8 @@ function appendDivElement(jsonObject, isScreenshot){
     if(isScreenshot)
     {
         // get from certain path
-        contentImg.src = '/reality'
+        contentImg.src = '/reality?id=' + screenshotDisplay
+        screenshotDisplay++ 
     }
     else
     {

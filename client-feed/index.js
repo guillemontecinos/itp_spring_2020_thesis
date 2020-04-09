@@ -9,7 +9,6 @@ const fs = require('fs')
 
 const expressPort = 3000
 
-let imageCounter = 0
 let imageReg = []
 
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -33,10 +32,10 @@ app.get('/', function (req, res) {
 })
 
 app.get('/reality', function (req, res) {
+	// console.log(req.query.id)
 	if(imageReg.length > 0) {
-		console.log('sending: ' + path.join(imageReg[imageCounter]))
-		res.sendFile(path.join(imageReg[imageCounter]))
-		imageCounter++
+		console.log('sending: ' + path.join(imageReg[Number(req.query.id)]))
+		res.sendFile(path.join(imageReg[Number(req.query.id)]))
 	}
 	else {
 		res.err
