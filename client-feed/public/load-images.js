@@ -1,14 +1,25 @@
 // This script loads all images from a .json scraped from instagram
 
 let jDat
+
+let prevTime = 0
+let prevTop = 0
+
 let screenshotCue = 0
 let screenshotDisplay = 0
 
 let path = "/feed-content/feed-content.json"
 
-socket.on('screenshot added', function(data){
+// Source: https://socket.io/docs/#Using-with-Express
+// TODO: update this address with the current IP
+let socket = io.connect('http://192.168.1.8')
+socket.on('connection answer', function(data){
     console.log(data)
+})
+
+socket.on('screenshot added', function(data){
     screenshotCue++
+    console.log('screenshotCue: ' + screenshotCue)
 })
 
 fetch(path)
@@ -24,6 +35,17 @@ fetch(path)
             }
 
             $(window).scroll(function(){
+                // calculates and sends scroll speed
+                let currentTop = $(window).scrollTop()
+                let currentTime = new Date().getTime()
+                let pixDelta = currentTop - prevTop
+                let deltaTime = currentTime - prevTime
+                let speed = pixDelta / deltaTime
+                socket.emit('speed event', {my: 'swiping', speed: speed})
+                prevTime = currentTime
+                prevTop = currentTop
+
+                // implements append divs under scroll
                 if ($(window).scrollTop() >= $(document).height() - $(window).height() - 50) {
                     // TODO: Improve Instagram look
                     // TODO: fetch data on every scroll, so I can send data that has been created on realtime
@@ -36,6 +58,7 @@ fetch(path)
                         i += 2
                         appendDivElement(null, true)
                         screenshotCue--
+                        console.log('screenshotCue: ' + screenshotCue)
                     }
                     else{
                         for(let j = 0; j < 3; j++)
@@ -81,6 +104,7 @@ function appendDivElement(jsonObject, isScreenshot){
         // get from certain path
         contentImg.src = '/reality?id=' + screenshotDisplay
         screenshotDisplay++ 
+        console.log('screenshotDisplay: ' + screenshotDisplay)
     }
     else
     {

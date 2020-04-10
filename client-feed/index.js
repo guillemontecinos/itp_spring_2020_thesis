@@ -32,10 +32,10 @@ app.get('/', function (req, res) {
 })
 
 app.get('/reality', function (req, res) {
-	// console.log(req.query.id)
 	if(imageReg.length > 0) {
-		console.log('sending: ' + path.join(imageReg[Number(req.query.id)]))
-		res.sendFile(path.join(imageReg[Number(req.query.id)]))
+		let reqPath = path.join(imageReg[Number(req.query.id)])
+		console.log('sending: ' + reqPath)
+		res.sendFile(reqPath)
 	}
 	else {
 		res.err
@@ -59,20 +59,27 @@ io.on('connection', function(socket){
 	console.log('Device Connected')
 	socket.emit('connection answer', {hello: 'world'})
 	socket.on('speed event', function(data){
-		console.log(data.my + ' at ' + data.speed + ' px/s')
-		let message = new OSC.Message(['swipetime'], data.speed.toString())
+		// console.log(data.my + ' at ' + data.speed + ' px/s')
+		let message = new OSC.Message(['swipespeed'], data.speed.toString())
 		osc.send(message, {host: 'localhost'})
 	})
 
 	// osc listener inside socket connection
 	osc.on('/screenshot', message => {
-		console.log(message.args)
 		let aux = message.args[0].split('/')
 		let localPath =  __dirname + '/private/' + aux[aux.length - 1]
 		setTimeout(function(){
 			fs.copyFile(message.args[0],localPath, (err) => {
 				if (err) throw err;
-				imageReg.push(localPath)
+				// this is to avoid duplications in the image reg because as the osc.on is declared inside the io.on, every event gets duplicated
+				if(imageReg.length == 0){
+					imageReg.push(localPath)
+					console.log('receiving: ' + message.args[0])
+				}
+				else if(imageReg.length > 0 && imageReg[imageReg.length - 1] != localPath) {
+					imageReg.push(localPath)
+					console.log('receiving: ' + message.args[0])
+				} 
 				socket.emit('screenshot added', {index: ''})
 			})
 		}, 300)

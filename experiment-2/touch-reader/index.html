@@ -60,6 +60,8 @@
             // Source: https://socket.io/docs/#Using-with-Express
             // TODO: update this address with the current IP
             let socket = io.connect('http://192.168.1.8')
+            let previousTime = 0
+            let previousTop = 0
             socket.on('connection answer', function(data){
                 console.log(data)
             })
@@ -70,8 +72,15 @@
                     $('.infinite').append('<div></div>')
                     // Sends each swipe's timestamp to the server
                     let currentTime = new Date().getTime()
-                    socket.emit('speed event', {my: 'swiped', time: currentTime})
+                    // socket.emit('speed event', {my: 'swiped', time: currentTime})
                 }
+                let pixDelta = $(window).scrollTop() - previousTop
+                let deltaTime = new Date().getTime() - previousTime
+                let speed = pixDelta / deltaTime
+                socket.emit('speed event', {my: 'swiped', time: speed})
+                previousTime = new Date().getTime()
+                previousTop = $(window).scrollTop()
+                // console.log($(window).scrollTop())
             })
         </script>
     </body>
