@@ -5,14 +5,17 @@ let jDat
 let prevTime = 0
 let prevTop = 0
 
-let screenshotCue = 0
+let screenshotCue = 21
 let screenshotDisplay = 0
 
 let path = "/feed-content/feed-content.json"
 
+const today = new Date()
+const week = 7 * 24 * 60 * 60 * 1000 //ms in a week 
+
 // Source: https://socket.io/docs/#Using-with-Express
 // TODO: update this address with the current IP
-let socket = io.connect('http://192.168.1.8')
+let socket = io.connect('http://192.168.1.2')
 socket.on('connection answer', function(data){
     console.log(data)
 })
@@ -124,7 +127,7 @@ function appendDivElement(jsonObject, isScreenshot){
     let descriptionText = document.createElement('span')
     descriptionText.className = "description-text"
     if (isScreenshot) {
-        // set caption with quotes
+        descriptionText.innerText = ' ' + captions[Math.trunc(Math.random() * captions.length)]
     }
     else {
         if(jsonObject.edge_media_to_caption.edges.length > 1){
@@ -138,11 +141,25 @@ function appendDivElement(jsonObject, isScreenshot){
             descriptionText.innerText = ""
         }
     }
-    let comments = document.createElement('div')
-    comments.className = "comments"
-    let form = document.createElement('div')
-    form.className = "form"
+    // let comments = document.createElement('div')
+    // comments.className = "comments"
+    // let form = document.createElement('div')
+    // form.className = "form"
+    let elapsedTime = document.createElement('div')
+    elapsedTime.className = "elapsed-time"
+    let timeDisplay = document.createElement('div')
+    timeDisplay.className = "time-display"
 
+    if(isScreenshot) {
+        timeDisplay.innerText = months[today.getMonth()] + ' ' + today.getDate() + ', ' + today.getFullYear()
+    }
+    else {
+        // let dt = today - (Number(jsonObject.taken_at_timestamp) * 1000)
+        // dt = Math.trunc(dt / week)
+        // timeDisplay.innerText = dt + ' weeks ago'
+        let dt = new Date(Number(jsonObject.taken_at_timestamp) * 1000)
+        timeDisplay.innerText = months[dt.getMonth()] + ' ' + dt.getDate() + ', ' + dt.getFullYear()
+    }
 
     profileInfo.appendChild(name)
     profileInfo.appendChild(locationDiv)
@@ -159,9 +176,47 @@ function appendDivElement(jsonObject, isScreenshot){
     description.appendChild(p)
     cardFooter.appendChild(likes)
     cardFooter.appendChild(description)
-    cardFooter.appendChild(comments)
-    cardFooter.appendChild(form)
+    // cardFooter.appendChild(comments)
+    // cardFooter.appendChild(form)
+    elapsedTime.appendChild(timeDisplay)
+    cardFooter.appendChild(elapsedTime)
     card.appendChild(cardFooter)
 
     $('.container').append(card)
 }
+
+const captions = [
+    'The territory no longer precedes the map, nor does it survive it.',
+    'It is no longer really the real, because no imaginary envelops it anymore.',
+    'Simulation threatens the difference between the "true" and the false, the \"real\" and the \"imaginary.\"',
+    'The transition from signs that dissimulate something to signs that dissimulate that there is nothing marks a decisive turning point.',
+    'Illusion is no longer possible, because the real is no longer posible.',
+    'The hyperrealism of simulation is translated by the hallucinatory resemblance of the real to itself.',
+    'Ideology only corresponds to a corruption of reality through signs; simulation corresponds to a short circuit of reality and to its duplication through signs.',
+    'There is no real: the third dimension is only the imaginary of a two-dimensional world, the fourth that of a three-dimensional universe.',
+    'No cultural object can retain its power when there are no longer new eyes to see it.',
+    'In the conversion of practices and rituals into merely aesthetic objects, the beliefs of previous cultures are objectively ironized, transformed into artifacts.',
+    'Capitalism is what is left when beliefs have collapsed at the level of ritual and symbolic elaboration, and all that is left is the consumer-spectator, trudging through the ruins and the relics.',
+    'The \'realism\' is analogous to the deflationary perspective of a depressive who believes that any positive states, any hope, is a dangerous illusion.',
+    'For Lacan, the Real is what any \'reality\' must supress; indeed, reality constitutes itself through just this repression.',
+    'Abstract space is destined not to last forever, and already contains the birth of a new space within itself.',
+    'The most effectively appropriated spaces are those occupied by symbols, appropriation offering the chance to invert social relations and meanings and so create a kind of heterotopic space.',
+    'Space is a social and political product.',
+    'Space is produced in two ways: as a social formation (mode of production), and as a mental construction (conception).',
+    'Our mode of reaction to space is not geometric, only our mode of abstraction is. There is an opposition established between our conception of space — abstract, mental and geometric — and our perception of space — concrete, material and physical.'
+]
+
+const months = [
+    'January',
+    'February',
+    'March',
+    'Abril',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+]

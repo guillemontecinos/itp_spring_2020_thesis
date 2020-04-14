@@ -9,7 +9,29 @@ const fs = require('fs')
 
 const expressPort = 3000
 
-let imageReg = []
+let imageReg = [
+	__dirname + '/private/0.jpg',
+	__dirname + '/private/1.jpg',
+	__dirname + '/private/2.jpg',
+	__dirname + '/private/3.jpg',
+	__dirname + '/private/4.jpg',
+	__dirname + '/private/5.jpg',
+	__dirname + '/private/6.jpg',
+	__dirname + '/private/7.jpg',
+	__dirname + '/private/8.jpg',
+	__dirname + '/private/9.jpg',
+	__dirname + '/private/10.jpg',
+	__dirname + '/private/11.jpg',
+	__dirname + '/private/12.jpg',
+	__dirname + '/private/13.jpg',
+	__dirname + '/private/14.jpg',
+	__dirname + '/private/15.jpg',
+	__dirname + '/private/16.jpg',
+	__dirname + '/private/17.jpg',
+	__dirname + '/private/18.jpg',
+	__dirname + '/private/19.jpg',
+	__dirname + '/private/20.jpg'
+]
 
 app.use(bodyParser.urlencoded({ extended: false }))
 
@@ -72,11 +94,7 @@ io.on('connection', function(socket){
 			fs.copyFile(message.args[0],localPath, (err) => {
 				if (err) throw err;
 				// this is to avoid duplications in the image reg because as the osc.on is declared inside the io.on, every event gets duplicated
-				if(imageReg.length == 0){
-					imageReg.push(localPath)
-					console.log('receiving: ' + message.args[0])
-				}
-				else if(imageReg.length > 0 && imageReg[imageReg.length - 1] != localPath) {
+				if(imageReg.length == 0 || imageReg.length > 0 && imageReg[imageReg.length - 1] != localPath) {
 					imageReg.push(localPath)
 					console.log('receiving: ' + message.args[0])
 				} 
