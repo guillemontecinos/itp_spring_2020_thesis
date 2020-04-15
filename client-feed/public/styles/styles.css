@@ -78,13 +78,16 @@ header {
 
 .container .card .card-header .profile-image {
   display: inline-block;
-  background: #111;
   height: 80px;
   width: 80px;
-  border-radius: 50%;
   position: relative;
   top: 3px;
   margin-right: 30px;
+}
+
+.container .card .card-header .profile-image .avatar {
+  width: 100%;
+  border-radius: 50%;
 }
 
 .container .card .card-header .profile-info {
@@ -103,12 +106,16 @@ header {
   color: #111;
 }
 
-.container .card .card-header .time {
-  font-size: 30px;
+.container .card .card-header .menu {
   float: right;
   display: inline-block;
-  top: 35px;
+  top: 10px;
   position: relative;
+  width: 9%;
+}
+
+.container .card .card-header .menu .menu-icon {
+  width: 100%;
 }
 
 .container .card .content img {
@@ -119,6 +126,52 @@ header {
   padding: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.container .card .card-footer .interaction .heart {
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 20px;
+  width: 8%;
+}
+
+.container .card .card-footer .interaction .heart .heart-icon {
+  width: 100%;
+}
+
+.container .card .card-footer .interaction .dialog {
+  display: inline-block;
+  margin-top: 15px;
+  margin-right: 20px;
+  width: 8%;
+}
+
+.container .card .card-footer .interaction .dialog .dialog-icon {
+  width: 100%;
+}
+
+.container .card .card-footer .interaction .share {
+  display: inline-block;
+  margin-top: 15px;
+  margin-right: 20px;
+  width: 8%;
+}
+
+.container .card .card-footer .interaction .share .share-icon {
+  width: 100%;
+}
+
+.container .card .card-footer .interaction .save {
+  display: inline-block;
+  margin-top: 15px;
+  margin-right: 15px;
+  float: right;
+  width: 8%;
+}
+
+.container .card .card-footer .interaction .save .save-icon {
+  width: 100%;
 }
 
 .container .card .card-footer .likes {

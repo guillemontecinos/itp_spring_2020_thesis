@@ -51,7 +51,6 @@ fetch(path)
                 // implements append divs under scroll
                 if ($(window).scrollTop() >= $(document).height() - $(window).height() - 50) {
                     // TODO: Improve Instagram look
-                    // TODO: fetch data on every scroll, so I can send data that has been created on realtime
                     if(screenshotCue > 0){
                         for(let j = 0; j < 2; j++)
                         {
@@ -81,13 +80,18 @@ function appendDivElement(jsonObject, isScreenshot){
     if(!isScreenshot){
         if(jsonObject.__typename == "GraphVideo") return
     }
-
+    // creates card =========================
     let card = document.createElement('div')
     card.className = "card"
+    
+    // creates card headers and components =========================
     let cardHeader = document.createElement('div')
     cardHeader.className = "card-header"
     let profileImage = document.createElement('div')
     profileImage.className = "profile-image"
+    let avatar = document.createElement('img')
+    avatar.className = "avatar"
+    avatar.src = '/thumbnails/profile.jpg'
     let profileInfo = document.createElement('div')
     profileInfo.className = "profile-info"
     let name = document.createElement('div')
@@ -97,8 +101,13 @@ function appendDivElement(jsonObject, isScreenshot){
     let locationDiv = document.createElement('div')
     locationDiv.className = "location"
     locationDiv.innerText = "Santiago, Chile"
-    let time = document.createElement('div')
-    time.className = "time"
+    let menu = document.createElement('div')
+    menu.className = "menu"
+    let menuIcon = document.createElement('img')
+    menuIcon.className = "menu-icon"
+    menuIcon.src = '/thumbnails/menu.png'
+    
+    // creates content and image content =========================
     let content = document.createElement('div')
     content.className = "content"
     let contentImg = document.createElement('img')
@@ -113,8 +122,32 @@ function appendDivElement(jsonObject, isScreenshot){
     {
         contentImg.src = jsonObject.display_url
     }
+    
+    // creates cardFooter and components =========================
     let cardFooter = document.createElement('div')
     cardFooter.className = "card-footer"
+    let interaction = document.createElement('div')
+    interaction.className = "interaction"
+    let heart = document.createElement('div')
+    heart.className = "heart"
+    let heartIcon = document.createElement('img')
+    heartIcon.className =  "heart-icon"
+    heartIcon.src = "/thumbnails/heart.png"
+    let dialog = document.createElement('div')
+    dialog.className = "dialog"
+    let dialogIcon = document.createElement('img')
+    dialogIcon.className =  "dialog-icon"
+    dialogIcon.src = "/thumbnails/chat.png"
+    let share = document.createElement('div')
+    share.className = "share"
+    let shareIcon = document.createElement('img')
+    shareIcon.className = "share-icon"
+    shareIcon.src = "/thumbnails/share.png"
+    let save = document.createElement('div')
+    save.className = "save"
+    let saveIcon = document.createElement('img')
+    saveIcon.className = "save-icon"
+    saveIcon.src = "/thumbnails/save.png"
     let likes = document.createElement('div')
     likes.className = "likes"
     let description = document.createElement('div')
@@ -154,26 +187,39 @@ function appendDivElement(jsonObject, isScreenshot){
         timeDisplay.innerText = months[today.getMonth()] + ' ' + today.getDate() + ', ' + today.getFullYear()
     }
     else {
-        // let dt = today - (Number(jsonObject.taken_at_timestamp) * 1000)
-        // dt = Math.trunc(dt / week)
-        // timeDisplay.innerText = dt + ' weeks ago'
         let dt = new Date(Number(jsonObject.taken_at_timestamp) * 1000)
         timeDisplay.innerText = months[dt.getMonth()] + ' ' + dt.getDate() + ', ' + dt.getFullYear()
     }
 
+    // appends cardHeader components =========================
+    profileImage.appendChild(avatar)
     profileInfo.appendChild(name)
     profileInfo.appendChild(locationDiv)
+    menu.appendChild(menuIcon)
     cardHeader.appendChild(profileImage)
     cardHeader.appendChild(profileInfo)
-    cardHeader.appendChild(time)
+    cardHeader.appendChild(menu)
     card.appendChild(cardHeader)
 
+    // appends content to card
     content.appendChild(contentImg)
     card.appendChild(content)
+
+    // appends cardFooter components =========================
+    heart.appendChild(heartIcon)
+    dialog.appendChild(dialogIcon)
+    share.appendChild(shareIcon)
+    save.appendChild(saveIcon)
+    interaction.appendChild(heart)
+    interaction.appendChild(dialog)
+    interaction.appendChild(share)
+    interaction.appendChild(save)
 
     p.appendChild(username)
     p.appendChild(descriptionText)
     description.appendChild(p)
+
+    cardFooter.appendChild(interaction)
     cardFooter.appendChild(likes)
     cardFooter.appendChild(description)
     // cardFooter.appendChild(comments)
