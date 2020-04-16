@@ -5,7 +5,7 @@ let jDat
 let prevTime = 0
 let prevTop = 0
 
-let screenshotCue = 21
+let screenshotCue = 0
 let screenshotDisplay = 0
 
 let path = "/feed-content/feed-content.json"
@@ -15,7 +15,7 @@ const week = 7 * 24 * 60 * 60 * 1000 //ms in a week
 
 // Source: https://socket.io/docs/#Using-with-Express
 // TODO: update this address with the current IP
-let socket = io.connect('http://192.168.1.2')
+let socket = io.connect('http://192.168.1.4')
 socket.on('connection answer', function(data){
     console.log(data)
 })

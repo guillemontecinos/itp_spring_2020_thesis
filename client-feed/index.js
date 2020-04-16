@@ -10,27 +10,6 @@ const fs = require('fs')
 const expressPort = 3000
 
 let imageReg = [
-	__dirname + '/private/30.jpg',
-	__dirname + '/private/31.jpg',
-	__dirname + '/private/32.jpg',
-	__dirname + '/private/33.jpg',
-	__dirname + '/private/34.jpg',
-	__dirname + '/private/35.jpg',
-	__dirname + '/private/36.jpg',
-	__dirname + '/private/37.jpg',
-	__dirname + '/private/38.jpg',
-	__dirname + '/private/39.jpg',
-	__dirname + '/private/40.jpg',
-	__dirname + '/private/41.jpg',
-	__dirname + '/private/42.jpg',
-	__dirname + '/private/43.jpg',
-	__dirname + '/private/44.jpg',
-	__dirname + '/private/45.jpg',
-	__dirname + '/private/46.jpg',
-	__dirname + '/private/47.jpg',
-	__dirname + '/private/48.jpg',
-	__dirname + '/private/49.jpg',
-	__dirname + '/private/50.jpg'
 ]
 
 app.use(bodyParser.urlencoded({ extended: false }))
