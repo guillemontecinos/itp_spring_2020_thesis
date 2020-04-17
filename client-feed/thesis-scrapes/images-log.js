@@ -58,7 +58,7 @@ function appendDivElement(jsonObject, id){
     let content = document.createElement('img')
     content.src = jsonObject.display_url
     let metadata = document.createElement('div')
-    metadata.innerText = 'metadata: ' + database + ', ' + id
+    metadata.innerText = 'metadata: ' + jsonObject.taken_at_timestamp * 1000 + ', ' + database + ', ' + id
     if(jsonObject.edge_media_to_caption.edges.length > 0){
         caption.innerText = " " + jsonObject.edge_media_to_caption.edges[0].node.text
     }

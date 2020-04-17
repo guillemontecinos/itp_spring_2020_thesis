@@ -5,7 +5,7 @@ let jDat
 let prevTime = 0
 let prevTop = 0
 
-let screenshotCue = 0
+let screenshotCue = 22
 let screenshotDisplay = 0
 
 let path = "/feed-content/feed-content.json"
@@ -15,7 +15,7 @@ const week = 7 * 24 * 60 * 60 * 1000 //ms in a week
 
 // Source: https://socket.io/docs/#Using-with-Express
 // TODO: update this address with the current IP
-let socket = io.connect('http://192.168.1.4')
+let socket = io.connect('http://192.168.1.8')
 socket.on('connection answer', function(data){
     console.log(data)
 })
@@ -77,9 +77,17 @@ fetch(path)
     });
 
 function appendDivElement(jsonObject, isScreenshot){
-    if(!isScreenshot){
-        if(jsonObject.__typename == "GraphVideo") return
+    let user
+    if(isScreenshot){
+        user = 'deformedrealities'
     }
+    else{
+        if(jsonObject.__typename == "GraphVideo") return
+
+        if(jsonObject.username != null) user = jsonObject.username
+        else user = 'plazadeladignidad'
+    }
+
     // creates card =========================
     let card = document.createElement('div')
     card.className = "card"
@@ -91,13 +99,17 @@ function appendDivElement(jsonObject, isScreenshot){
     profileImage.className = "profile-image"
     let avatar = document.createElement('img')
     avatar.className = "avatar"
-    avatar.src = '/thumbnails/profile.jpg'
+
+    if(isScreenshot) avatar.src = '/thumbnails/profile.jpg'
+    else {
+        if(user != null) avatar.src = '/thumbnails/' + user + '.jpg'
+    }
+    
     let profileInfo = document.createElement('div')
     profileInfo.className = "profile-info"
     let name = document.createElement('div')
     name.className = "name"
-    // name.innerText = jsonObject.username
-    name.innerText = "deformedrealities"
+    name.innerText = user
     let locationDiv = document.createElement('div')
     locationDiv.className = "location"
     locationDiv.innerText = "Santiago, Chile"
@@ -150,13 +162,20 @@ function appendDivElement(jsonObject, isScreenshot){
     saveIcon.src = "/thumbnails/save.png"
     let likes = document.createElement('div')
     likes.className = "likes"
+    let likesDisp = document.createElement('p')
+    likesDisp.className = "likes-display"
+    if(isScreenshot){
+        likesDisp.innerText = Math.trunc(Math.random() * 2000) + ' likes'
+    }
+    else {
+        likesDisp.innerText = jsonObject.edge_media_preview_like.count + ' likes'
+    }
     let description = document.createElement('div')
     description.className = "description"
     let p = document.createElement('p') 
     let username = document.createElement('span')
     username.className = "name"
-    // username.innerText = jsonObject.username
-    username.innerText = "deformedrealities"
+    username.innerText = user
     let descriptionText = document.createElement('span')
     descriptionText.className = "description-text"
     if (isScreenshot) {
@@ -214,6 +233,8 @@ function appendDivElement(jsonObject, isScreenshot){
     interaction.appendChild(dialog)
     interaction.appendChild(share)
     interaction.appendChild(save)
+
+    likes.appendChild(likesDisp)
 
     p.appendChild(username)
     p.appendChild(descriptionText)

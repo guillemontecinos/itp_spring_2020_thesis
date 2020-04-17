@@ -49,8 +49,7 @@ table {
 
 // Styles and html structure from: https://www.youtube.com/watch?v=Vxb_pH33c54
 // Here the styling starts
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 header {
     background: #fff;
@@ -63,7 +62,8 @@ header {
     width: 100%;
     top: 50px;
     bottom: 0;
-    font-family: 'Roboto', sans-serif;
+    // font-family: 'Roboto', sans-serif;
+    font-family: 'Helvetica Neue';
 
     .card {
         background:white;
@@ -91,17 +91,16 @@ header {
             }
             .profile-info{
                 display: inline-block;
-
+                color: #262626;
                 .name{
-                    font-size: 35px;
-                    color: #111;
-                    font-weight: 700;
+                    font-size: 37px;
+                    font-weight: 500;
+                    margin-bottom: 2px;
                 }
 
                 .location{
                     margin-top: 2px;
-                    font-size: 30px;
-                    color: #111;
+                    font-size: 32px;
                 }
             }
             .menu{
@@ -110,7 +109,7 @@ header {
                 display: inline-block;
                 top: 10px;
                 position: relative;
-                width: 9%;
+                width: 7%;
                 .menu-icon{
                     width: 100%;
                 }
@@ -167,26 +166,34 @@ header {
                 }
             }
             .likes{
-                color: #111;
-                font-size: 30px;
-                padding-bottom: 10px;
+                color: #262626;
+                font-size: 37px;
+                .likes-display{
+                    margin-top: 25px;
+                    margin-left: 20px; 
+                    margin-bottom: 25px;
+                    font-weight: 500;
+                }
             }
             .description{
+                color: #262626;
                 p{
-                    font-size: 30px;
+                    font-size: 27px;
                     margin: 15px;
+                    margin-left: 20px;
+                    font-weight: 400;
                 }
                 .name{
-                    font-size: 35 px;
-                    font-weight: 700;
+                    font-size: 37px;
+                    font-weight: 500;
                 }
             }
             .elapsed-time{
                 .time-display{
-                    font-size: 25px;
-                    font-weight: 500;
-                    color: #878787;
-                    padding: 15px;
+                    font-size: 28px;
+                    // font-weight: 500;
+                    color: #8e8e8e;
+                    margin: 20px;
                 }
             }
         }

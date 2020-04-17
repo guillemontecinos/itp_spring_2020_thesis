@@ -1,10 +1,12 @@
 let pathpp = './piensaprensarespaldo/piensaprensarespaldo.json'
 let pathrvf = './radiovillafrancia/radiovillafrancia.json'
 let pathpdld = './plazadeladignidad/plazadeladignidad.json'
+let pathnk = './nicole_kramm/nicole_kramm.json'
+let pathaton = './atonchile/atonchile.json'
 let pathcsv = './content-selection.txt'
 let output = { "GraphImages": []}
 let input
-let pdld, pp, rvf
+let pdld, pp, rvf, nk, aton
 
 
 fetch(pathcsv)
@@ -17,6 +19,7 @@ fetch(pathcsv)
                     input[i] = input[i].split(',')
                     input[i][1] = Number(input[i][1])
                 }
+                console.log(input)
 
                 fetch(pathpdld)
                     .then(response => response.json())
@@ -35,32 +38,52 @@ fetch(pathcsv)
                                                     .then(json => 
                                                             {
                                                                 pp = json
-                                                                console.log("loaded")
 
-                                                                // fulfill output object
-                                                                for(let i = 0; i < input.length; i++)
-                                                                {
-                                                                    if(input[i][0] == "radiovillafrancia")
-                                                                    {   
-                                                                        let aux = [input[i][0], rvf.GraphImages[input[i][1]]]
-                                                                        output.GraphImages.push(aux)
-                                                                    }
-                                                                    else if(input[i][0] == "piensaprensarespaldo")
-                                                                    {
-                                                                        // output.GraphImages.push(pp.GraphImages[input[i][1]])
-                                                                        let aux = [input[i][0], pp.GraphImages[input[i][1]]]
-                                                                        output.GraphImages.push(aux)
-                                                                    }
-                                                                    else if(input[i][0] == "plazadeladignidad")
-                                                                    {
-                                                                        // output.GraphImages.push(pdld.GraphImages[input[i][1]])
-                                                                        let aux = [input[i][0], pdld.GraphImages[input[i][1]]]
-                                                                        output.GraphImages.push(aux)
-                                                                    }
-                                                                }
+                                                                fetch(pathnk)
+                                                                    .then(response => response.json())
+                                                                    .then(json => 
+                                                                            {
+                                                                                nk = json
 
-                                                                console.log(JSON.stringify(output))
-
+                                                                                fetch(pathaton)
+                                                                                    .then(response => response.json())
+                                                                                    .then(json => 
+                                                                                            {
+                                                                                                aton = json
+                                                                                                console.log("loaded")
+                                                                                                
+                                                                                                // fulfill output object
+                                                                                                for(let i = 0; i < input.length; i++)
+                                                                                                {
+                                                                                                    if(input[i][0] == "radiovillafrancia")
+                                                                                                    {   
+                                                                                                        let aux = [input[i][0], rvf.GraphImages[input[i][1]]]
+                                                                                                        output.GraphImages.push(aux)
+                                                                                                    }
+                                                                                                    else if(input[i][0] == "piensaprensarespaldo")
+                                                                                                    {
+                                                                                                        let aux = [input[i][0], pp.GraphImages[input[i][1]]]
+                                                                                                        output.GraphImages.push(aux)
+                                                                                                    }
+                                                                                                    else if(input[i][0] == "plazadeladignidad")
+                                                                                                    {
+                                                                                                        let aux = [input[i][0], pdld.GraphImages[input[i][1]]]
+                                                                                                        output.GraphImages.push(aux)
+                                                                                                    }
+                                                                                                    else if(input[i][0] == "nicole_kramm")
+                                                                                                    {
+                                                                                                        let aux = [input[i][0], nk.GraphImages[input[i][1]]]
+                                                                                                        output.GraphImages.push(aux)
+                                                                                                    }
+                                                                                                    else if(input[i][0] == "atonchile")
+                                                                                                    {
+                                                                                                        let aux = [input[i][0], aton.GraphImages[input[i][1]]]
+                                                                                                        output.GraphImages.push(aux)
+                                                                                                    }
+                                                                                                }
+                                                                                                console.log(JSON.stringify(output)) 
+                                                                                        });  
+                                                                        });  
                                                         }); 
                                         });  
                         });

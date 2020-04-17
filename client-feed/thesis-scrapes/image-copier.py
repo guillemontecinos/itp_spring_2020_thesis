@@ -14,6 +14,6 @@ for pic in data['GraphImages']:
     try:
         copyfile(path,dest + picName)
     except IOError:
-        print('cannot copy file: ' + picName)
-    else:
-        print('file copied succesfully: ' + picName)
+        print('cannot copy file: ' + picName + ', from database: ' + database)
+    # else:
+        # print('file copied succesfully: ' + picName)

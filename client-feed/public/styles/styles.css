@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -63,7 +62,7 @@ header {
   width: 100%;
   top: 50px;
   bottom: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Helvetica Neue';
 }
 
 .container .card {
@@ -92,18 +91,18 @@ header {
 
 .container .card .card-header .profile-info {
   display: inline-block;
+  color: #262626;
 }
 
 .container .card .card-header .profile-info .name {
-  font-size: 35px;
-  color: #111;
-  font-weight: 700;
+  font-size: 37px;
+  font-weight: 500;
+  margin-bottom: 2px;
 }
 
 .container .card .card-header .profile-info .location {
   margin-top: 2px;
-  font-size: 30px;
-  color: #111;
+  font-size: 32px;
 }
 
 .container .card .card-header .menu {
@@ -111,7 +110,7 @@ header {
   display: inline-block;
   top: 10px;
   position: relative;
-  width: 9%;
+  width: 7%;
 }
 
 .container .card .card-header .menu .menu-icon {
@@ -175,25 +174,36 @@ header {
 }
 
 .container .card .card-footer .likes {
-  color: #111;
-  font-size: 30px;
-  padding-bottom: 10px;
+  color: #262626;
+  font-size: 37px;
+}
+
+.container .card .card-footer .likes .likes-display {
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.container .card .card-footer .description {
+  color: #262626;
 }
 
 .container .card .card-footer .description p {
-  font-size: 30px;
+  font-size: 27px;
   margin: 15px;
+  margin-left: 20px;
+  font-weight: 400;
 }
 
 .container .card .card-footer .description .name {
-  font-size: 35 px;
-  font-weight: 700;
+  font-size: 37px;
+  font-weight: 500;
 }
 
 .container .card .card-footer .elapsed-time .time-display {
-  font-size: 25px;
-  font-weight: 500;
-  color: #878787;
-  padding: 15px;
+  font-size: 28px;
+  color: #8e8e8e;
+  margin: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
