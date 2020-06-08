@@ -14,8 +14,8 @@ void ofApp::setup(){
     shader.load("shadersGL3/shader-flag.vert", "shadersGL3/shader-flag.frag");
     
 //    img.load("dignidad.jpg");
-//    video.load("ny-walk.mp4");
-    video.load("manuel-de-salas.mp4");
+    video.load("ny-walk.mp4");
+//    video.load("manuel-de-salas.mp4");
     
     int planeWidth = video.getWidth();
     int planeHeight = video.getHeight();

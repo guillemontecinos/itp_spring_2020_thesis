@@ -15,7 +15,7 @@ const week = 7 * 24 * 60 * 60 * 1000 //ms in a week
 
 // Source: https://socket.io/docs/#Using-with-Express
 // TODO: update this address with the current IP
-let socket = io.connect('http://192.168.1.8')
+let socket = io.connect('http://192.168.1.5')
 socket.on('connection answer', function(data){
     console.log(data)
 })
@@ -79,12 +79,12 @@ fetch(path)
 function appendDivElement(jsonObject, isScreenshot){
     let user
     if(isScreenshot){
-        user = 'deformedrealities'
+        user = 'therevoltofreplicas'
     }
     else{
         if(jsonObject.__typename == "GraphVideo") return
-
-        if(jsonObject.username != null) user = jsonObject.username
+        // TODO: urls are not working anymore, so images have to be loaded from public folder
+        if(jsonObject.username != null && jsonObject.username != 'radiovillafrancia') user = jsonObject.username
         else user = 'plazadeladignidad'
     }
 
@@ -100,7 +100,7 @@ function appendDivElement(jsonObject, isScreenshot){
     let avatar = document.createElement('img')
     avatar.className = "avatar"
 
-    if(isScreenshot) avatar.src = '/thumbnails/profile.jpg'
+    if(isScreenshot) avatar.src = '/thumbnails/revoltofreplicas-1.jpg'
     else {
         if(user != null) avatar.src = '/thumbnails/' + user + '.jpg'
     }

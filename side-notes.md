@@ -54,3 +54,10 @@
 * [Tatzu Nishi](http://www.tatzunishi.net/head2.html): Builds monumental living rooms around actual monuments.
 * [Grand Old Party](https://mepler.com/Grand-Old-Party): Sculptures created with data from the 2016 elections.
 * [Future Perfect](https://www.youtube.com/watch?v=nw4hAY2jq2A): Installation that works with layers of reality
+
+## Unity Lightning
+* https://www.youtube.com/watch?v=HVChO6VIw_Q
+* https://www.youtube.com/watch?v=zSMzb0iINek
+
+## Thesis Presentation
+* https://hackmd.io/@H7Uw4dIZSsSlz5on_4mJMg/S1f-3f5_8
